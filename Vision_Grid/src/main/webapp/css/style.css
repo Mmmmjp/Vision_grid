@@ -1,2 +1,29 @@
 @charset "UTF-8";
 
+:root {
+    --orange:#ec9b4d;
+    --dark-orange:#c86c36;
+    --green:#76c53a;
+    --darker-green:#5ac463;
+    --black:#3e3e3e;
+    --gray:#cccccc;
+}	
+
+body {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--black);
+}
+header {
+    background-color: var(--orange);
+}
+header h1{
+    font-size: 2rem;
+    color: white;
+}
+
+footer {
+    background-color: var(--dark-orange);
+    color:white;
+}
