@@ -13,8 +13,8 @@ import model.AccountBeans;
 import model.LoginLogic;
 
 
-@WebServlet("/Login")
-public class Login extends HttpServlet {
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 

@@ -19,8 +19,8 @@
 <!-- Headerのインクルード -->
 <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-<a href="Login">ログイン</a>
-<a href="Register">新規アカウント作成</a>
+<a href="LoginServlet">ログイン</a>
+<a href="RegisterServlet">新規アカウント作成</a>
 
 <!-- フッターのインクルード -->
 <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />

@@ -4,9 +4,9 @@ import dao.AccountsDAO;
 
 public class LoginLogic {
 	
-	public AccountBeans execute(AccountBeans account) {
+	public AccountBeans execute(AccountBeans authAccount) {
 		AccountsDAO dao = new AccountsDAO();
-		AccountBeans foundAccount = dao.findAccount(account);
+		AccountBeans foundAccount = dao.findAccount(authAccount);
 		
 		return foundAccount;
 	}
