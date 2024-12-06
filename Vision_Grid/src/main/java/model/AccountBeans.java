@@ -22,6 +22,14 @@ public class AccountBeans implements Serializable{
 		this.setPassword(password);
 	}
 	
+	public AccountBeans(String userName, String password, String realName, LocalDate dob, String gender) {
+		this.userName = userName;
+		this.password = password;
+		this.realName = realName;
+		this.dob = dob;
+		this.gender = gender;
+	}
+	
 	public AccountBeans(int userId,String userName, String password, String realName,LocalDate dob, String gender) {
 		this.userId = userId;
 		this.userName = userName;
@@ -29,7 +37,6 @@ public class AccountBeans implements Serializable{
 		this.realName = realName;
 		this.dob = dob;
 		this.gender = gender;
-		
 	}
 
 	// Getter and setter 

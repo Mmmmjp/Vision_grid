@@ -87,3 +87,46 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 ## Clone 
    ```bash
    git clone https://github.com/your-username/VisionGrid.git
+   ```
+
+## Directory Tree
+
+### ログイン認証、新規登録機能実装までのディレクトリ構成
+```
+.
+└── VisionGrid/
+    ├── java/
+    │   ├── servlet/
+    │   │   ├── LoginServlet.java               # ログイン処理を行うサーブレット
+    │   │   ├── RegisterServlet.java            # 新規登録画面への遷移を担当
+    │   │   ├── RegCompleteServlet.java         # 登録確認後の処理を行うサーブレット
+    │   │   └── Main.java                       # メインページ処理を担当（仮）
+    │   ├── model/
+    │   │   ├── AccountBeans.java               # ユーザー情報を保持するJavaBeans
+    │   │   ├── LoginLogic.java                 # ログイン処理のロジック
+    │   │   └── RegisterLogic.java              # 新規登録処理のロジック
+    │   ├── filter/
+    │   │   └── SetEncodingFilter.java          # リクエストとレスポンスのエンコーディング設定
+    │   ├── dao/
+    │   │   ├── BaseDAO.java                    # データベース接続の共通部分を定義
+    │   │   ├── AccountsDAO.java                # ログイン用のデータ操作クラス
+    │   │   └── AccountRegisterDAO.java         # 新規登録用のデータ操作クラス
+    │   └── test/
+    │       ├── AccountsDAOTest.java            # AccountsDAOのテストクラス
+    │       └── LoginLogicTest.java             # LoginLogicのテストクラス
+    └── webapp/
+        ├── css/
+        │   └── style.css                       # 基本的なスタイルシート
+        ├── images/                             # 画像ファイル置き場（空）
+        ├── WEB-INF/
+        │   └── jsp/
+        │       ├── includes/
+        │       │   ├── header.jsp              # ヘッダー部分の共通ファイル
+        │       │   └── footer.jsp              # フッター部分の共通ファイル
+        │       ├── login.jsp                   # ログイン画面
+        │       ├── loginSuccess.jsp            # ログイン成功画面
+        │       ├── registerConfirm.jsp         # 登録内容確認画面
+        │       └── registerSuccess.jsp         # 登録成功画面
+        └── index.jsp                           # トップページ
+
+```

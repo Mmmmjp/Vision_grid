@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <%@ taglib prefix="c" uri="jakarta.tags.core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Vision Grid | LOGIN</title>
+    <title>Vision Grid | REGISTER-SUCCESS</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,25 +20,14 @@
     <!-- Headerのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-    <main>
-        <h2>ログインページ</h2>
-        
-        <c:if test="${not empty errorMsg}">
-            <p style="color: red;">${errorMsg}</p>
-        </c:if>
-
-        <form action="LoginServlet" method="post">
-            <label for="userName">ユーザネーム</label>
-            <input type="text" name="userName" placeholder="Your username" required>
-            <br>
-                    
-            <label for="password">パスワード</label>
-            <input type="password" name="password" placeholder="Your password" required>
-            <br>
-                    
-            <input type="submit" value="ログイン"> 
-        </form>
-    </main>
+	<main>
+	    <h2>WELCOME!!</h2>
+	    
+         <p>さっそくログインしてみよう！</p>
+         
+        <a href="LoginServlet">ログイン画面へ</a>
+    	<a href="index.jsp">TOPへ戻る</a>
+	</main>
 
     <!-- フッターのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
