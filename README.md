@@ -89,6 +89,14 @@ VisionGridの開発を通じて、以下のスキルを向上させました
    git clone https://github.com/your-username/VisionGrid.git
    ```
 
+## データベース
+
+データベースファイルは、以下のディレクトリに保存してください：
+```
+~\Documents\database
+```
+
+
 ## Directory Tree
 
 ### ログイン認証、新規登録機能実装までのディレクトリ構成
