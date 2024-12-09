@@ -24,7 +24,7 @@
 <main>
   	<!-- ログアウトメッセージの表示 -->
     <c:if test="${not empty logoutMessage}">
-        <p style="color: green; font-family: 'M PLUS Rounded 1c', sans-serif; text-align: center;">
+        <p style="color: green;">
             ${logoutMessage}
         </p>
     </c:if>

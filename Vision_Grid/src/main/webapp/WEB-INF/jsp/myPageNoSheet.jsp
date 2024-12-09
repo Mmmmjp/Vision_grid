@@ -21,8 +21,6 @@
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
 	<main>
-	    
-         <p>さっそくログインしてみよう！</p>
          
         <a href="MandalaIntroServlet">目標達成シートを作成する</a>
     	<a href="LogoutServlet">ログアウト</a>

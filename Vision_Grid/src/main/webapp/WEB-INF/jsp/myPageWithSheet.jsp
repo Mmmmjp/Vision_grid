@@ -25,6 +25,14 @@
          <p><c:out value="${loggedInUser.userName}" />さんの目標シート</p>
          
          <c:out value="${vision.visionKey}" />
+         <div>
+            <c:forEach var="element" items="${elementsList}">
+                <p>位置: <c:out value="${element.position}" /></p>
+                <p>キー: <c:out value="${element.elementKey}" /></p>
+                <p>テキスト: <c:out value="${element.elementText}" /></p>
+                <hr />
+            </c:forEach>
+        </div>
         
     	<a href="LogoutServlet">ログアウト</a>
 	</main>
