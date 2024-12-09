@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Vision Grid | LOGIN</title>
+    <title>Vision Grid | MY PAGE</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +21,12 @@
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
 	<main>
-    <h2>WELCOME</h2>
-    
-    <p>ようこそ<c:out value="${loggedInUser.userName}" />さん</p>
-    
-    <a href="MyPageServlet">マイページへ</a>
+	    
+         <p><c:out value="${loggedInUser.userName}" />さんの目標シート</p>
+         
+         <c:out value="${vision.visionKey}" />
+        
+    	<a href="LogoutServlet">ログアウト</a>
 	</main>
 
     <!-- フッターのインクルード -->
