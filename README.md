@@ -138,3 +138,61 @@ VisionGridの開発を通じて、以下のスキルを向上させました
         └── index.jsp                           # トップページ
 
 ```
+
+### 目標シート作成済みの場合のMyPageデータ表示機能を実装までのディレクトリ構成
+```
+.
+└── VisionGrid/
+    ├── java/
+    │   ├── servlet/
+    │   │   ├── LoginServlet.java
+    │   │   ├── RegisterServlet.java
+    │   │   ├── RegCompleteServlet.java
+    │   │   ├── LogoutServlet.java
+    │   │   └── MyPageServlet.java  
+    │   ├── model/
+    │   │   ├── AccountBeans.java[java beans]
+    │   │   ├── LoginLogic.java
+    │   │   ├── RegisterLogic.java
+    │   │   ├── VisionBeans[java beans]
+    │   │   ├── ElementBeans[java beans]
+    │   │   ├── ActionBeans[java beans]
+    │   │   ├── VisionFetchLogic.java
+    │   │   ├── ElementsFetchLogic.java
+    │   │   └── ActionsFetchLogic.java
+    │   ├── filter/
+    │   │   ├── SetEncodingFilter.java
+    │   │   └── AuthenticationFilter.java
+    │   ├── dao/
+    │   │   ├── BaseDAO.java
+    │   │   ├── AccountsDAO.java
+    │   │   ├── AccountRegisterDAO.java
+    │   │   ├── VisionFetchDAO.java
+    │   │   ├── ElementsFetchDAO.java
+    │   │   └── ActionsFetchDAO.java
+    │   └── test/
+    │       ├── AccountsDAOTest.java 
+    │       ├── LoginLogicTest.java
+    │       ├── VisionFetchDAOTest.java
+    │       ├── VisionFetchLogicTest.java
+    │       ├── ElementsFetchDAOTest.java
+    │       ├── ElementsFetchLogicTest.java
+    │       ├── ActionsFetchDAOTest.java
+    │       └── ActionsFetchLogicTest.java
+    └── webapp/
+        ├── css/
+        │   └── style.css
+        ├── images
+        ├── WEB-INF/
+        │   └── jsp/
+        │       ├── includes/
+        │       │   ├── header.jsp
+        │       │   └── footer.jsp
+        │       ├── login.jsp
+        │       ├── loginSuccess.jsp
+        │       ├── registerConfirm.jsp
+        │       ├── registerSuccess.jsp
+        │       ├── myPageNoSheet.jsp
+        │       └── myPageWithSheet.jsp
+        └── index.jsp
+```
