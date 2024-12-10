@@ -24,7 +24,10 @@
 	    
          <p><c:out value="${loggedInUser.userName}" />さんの目標シート</p>
          
+         <!-- VISION -->
          <c:out value="${vision.visionKey}" />
+         
+         <!-- ELEMENTS -->
          <div>
             <c:forEach var="element" items="${elementsList}">
                 <p>位置: <c:out value="${element.position}" /></p>
@@ -32,6 +35,16 @@
                 <p>テキスト: <c:out value="${element.elementText}" /></p>
                 <hr />
             </c:forEach>
+        </div>
+        
+        <!-- ACTIONS -->
+        <div>
+	    	<c:forEach var="position" items="${actionsByElement}">
+	        	<h3>${position.key} のアクションリスト</h3> <!-- よりわかりやすい表現 -->
+		        <c:forEach var="action" items="${position.value}">
+		            <p>${action.actionKey}: ${action.actionText}</p>
+		        </c:forEach>
+	    	</c:forEach>
         </div>
         
     	<a href="LogoutServlet">ログアウト</a>
