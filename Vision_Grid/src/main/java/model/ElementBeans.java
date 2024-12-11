@@ -13,7 +13,7 @@ public class ElementBeans implements Serializable {
     // Default Constructor
     public ElementBeans() {}
 
-    // Constructor with specific fields
+    // Constructor 
     public ElementBeans(int visionId, String position, String elementKey, String elementText) {
         this.visionId = visionId;
         this.position = position;
@@ -21,7 +21,6 @@ public class ElementBeans implements Serializable {
         this.elementText = elementText;
     }
 
-    // Constructor with all fields
     public ElementBeans(int elementId, int visionId, String position, String elementKey, String elementText) {
         this.elementId = elementId;
         this.visionId = visionId;
@@ -29,6 +28,13 @@ public class ElementBeans implements Serializable {
         this.elementKey = elementKey;
         this.elementText = elementText;
     }
+    
+    public ElementBeans(String position, String elementKey, String elementText) {
+        this.position = position;
+        this.elementKey = elementKey;
+        this.elementText = elementText;
+    }
+    
 
     // Getters and Setters
     public int getElementId() {

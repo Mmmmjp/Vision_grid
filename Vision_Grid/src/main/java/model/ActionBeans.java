@@ -13,15 +13,20 @@ public class ActionBeans implements Serializable {
     // Default Constructor
     public ActionBeans() {}
 
-    // Constructor with specific fields (without actionId)
+    // Constructor 
     public ActionBeans(int elementId, String position, String actionKey, String actionText) {
         this.elementId = elementId;
         this.position = position;
         this.actionKey = actionKey;
         this.actionText = actionText;
     }
+    
+    public ActionBeans( String position, String actionKey, String actionText) {
+        this.position = position;
+        this.actionKey = actionKey;
+        this.actionText = actionText;
+    }
 
-    // Constructor with all fields
     public ActionBeans(int actionId, int elementId, String position, String actionKey, String actionText) {
         this.actionId = actionId;
         this.elementId = elementId;
@@ -29,6 +34,10 @@ public class ActionBeans implements Serializable {
         this.actionKey = actionKey;
         this.actionText = actionText;
     }
+    
+    
+    
+    
 
     // Getters and Setters
     public int getActionId() {
