@@ -196,3 +196,77 @@ VisionGridの開発を通じて、以下のスキルを向上させました
         │       └── myPageWithSheet.jsp
         └── index.jsp
 ```
+
+### MyPageでのシート表示機能を実装までのディレクトリ構成
+```
+.
+└── VisionGrid/
+    ├── java/
+    │   ├── servlet/
+    │   │   ├── LoginServlet.java
+    │   │   ├── RegisterServlet.java
+    │   │   ├── RegCompleteServlet.java
+    │   │   ├── LogoutServlet.java
+    │   │   └── MyPageServlet.java  
+    │   ├── model/
+    │   │   ├── AccountBeans.java[java beans]
+    │   │   ├── LoginLogic.java
+    │   │   ├── RegisterLogic.java
+    │   │   ├── VisionBeans[java beans]
+    │   │   ├── ElementBeans[java beans]
+    │   │   ├── ActionBeans[java beans]
+    │   │   ├── VisionFetchLogic.java
+    │   │   ├── ElementsFetchLogic.java
+    │   │   └── ActionsFetchLogic.java
+    │   ├── filter/
+    │   │   ├── SetEncodingFilter.java
+    │   │   └── AuthenticationFilter.java
+    │   ├── dao/
+    │   │   ├── BaseDAO.java
+    │   │   ├── AccountsDAO.java
+    │   │   ├── AccountRegisterDAO.java
+    │   │   ├── VisionFetchDAO.java
+    │   │   ├── ElementsFetchDAO.java
+    │   │   └── ActionsFetchDAO.java
+    │   └── test/
+    │       ├── AccountsDAOTest.java 
+    │       ├── LoginLogicTest.java
+    │       ├── VisionFetchDAOTest.java
+    │       ├── VisionFetchLogicTest.java
+    │       ├── ElementsFetchDAOTest.java
+    │       ├── ElementsFetchLogicTest.java
+    │       ├── ActionsFetchDAOTest.java
+    │       └── ActionsFetchLogicTest.java
+    └── webapp/
+        ├── css/
+        │   ├── reset.css
+        │   ├── style.css
+        │   └── gridSheet.jsp
+        ├── images
+        ├── WEB-INF/
+        │   └── jsp/
+        │       ├── includes/
+        │       │   ├── header.jsp
+        │       │   ├── footer.jsp
+        │       │   ├── gridSheet.jsp
+        │       │   └── _gridRow.jspf
+        │       ├── login.jsp
+        │       ├── loginSuccess.jsp
+        │       ├── registerConfirm.jsp
+        │       ├── registerSuccess.jsp
+        │       ├── myPageNoSheet.jsp
+        │       └── myPageWithSheet.jsp
+        └── index.jsp
+```
+####　目標シートの表示についてポイント
+
+目標シートの表示処理は、再利用性と保守性を高めるために以下のように実装しています：
+
+1. **JSPフラグメントの利用**  
+   セッションスコープからデータを取り出す処理や、グリッド構造を生成するコードの重複を避けるため、JSPフラグメントを使用して共通化しました。
+
+2. **インクルードによる分割**  
+   目標シートの表示部分をインクルードファイルとして分離し、親ページとロジックを明確に分割しました。このアプローチにより、見通しの良い構造を実現し、メンテナンス性を向上させました。
+
+---
+

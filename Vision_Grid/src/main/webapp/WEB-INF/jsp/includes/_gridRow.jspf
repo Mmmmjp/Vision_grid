@@ -1,0 +1,34 @@
+<c:forEach var="rowIndex" begin="0" end="8">
+    <c:forEach var="colIndex" begin="0" end="8">
+        <c:set var="position" value="${positions[rowIndex * 9 + colIndex]}" />
+
+        <!-- 真ん中のVISIONを処理 -->
+        <c:if test="${position == 'vision'}">
+            <div class="grid-cell vision">
+                <c:out value="${vision.visionKey}" />
+            </div>
+        </c:if>
+
+        <!-- 要素の出力 -->
+        <c:if test="${position != 'vision'}">
+            <c:forEach var="element" items="${elementsList}">
+                <c:if test="${element.position == position}">
+                    <div class="grid-cell element-${element.elementId}">
+                        <c:out value="${element.elementKey}" />
+                    </div>
+                </c:if>
+            </c:forEach>
+        </c:if>
+
+        <!-- アクションの出力 -->
+        <c:if test="${position != 'vision'}">
+            <c:forEach var="action" items="${actionsList}">
+                <c:if test="${action.position == position}">
+                    <div class="grid-cell action-element-${action.elementId}">
+                        <c:out value="${action.actionKey}" />
+                    </div>
+                </c:if>
+            </c:forEach>
+        </c:if>
+    </c:forEach>
+</c:forEach>

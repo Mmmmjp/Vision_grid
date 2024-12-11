@@ -1,9 +1,7 @@
 package servlet;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 import jakarta.servlet.RequestDispatcher;
@@ -57,18 +55,8 @@ public class MyPageServlet extends HttpServlet {
                 List<ActionBeans> actionsList = 
                 		actionsFetchLogic.getActionsByElementIds(elementIdsList);
                 
-                // 要素ごとにアクションリストを分ける
-                Map<String, List<ActionBeans>> actionsByElement = new HashMap<>();
-                for (ElementBeans element : elementsList) {
-                    String position = element.getPosition(); // よりわかりやすく名前を変更
-                    List<ActionBeans> relatedActions = actionsList.stream()
-                        .filter(action -> action.getElementId() == element.getElementId())
-                        .collect(Collectors.toList());
-                    actionsByElement.put(position, relatedActions);
-                }
-
-                // セッションスコープに格納
-                session.setAttribute("actionsByElement", actionsByElement);
+                
+                session.setAttribute("actionsList", actionsList);
                 
 
                 RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/myPageWithSheet.jsp");
