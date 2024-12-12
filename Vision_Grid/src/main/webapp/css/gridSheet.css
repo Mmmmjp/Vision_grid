@@ -29,24 +29,24 @@
 }
 
 /* 要素ごとのセルの色設定（濃い色） */
-.grid-cell.element-1 {background-color: #ff9999;}
-.grid-cell.element-2 {background-color: #fff27f;}
-.grid-cell.element-3 {background-color: #7fbfff;}
-.grid-cell.element-4 {background-color: #7fff7f;}
-.grid-cell.element-5 {background-color: #bf7fff;}
-.grid-cell.element-6 {background-color: #ffa07a;}
-.grid-cell.element-7 {background-color: #bfbfbf;}
-.grid-cell.element-8 {background-color: #ffd27f;}
+.grid-cell.element-e1 {background-color: #ff9999;}
+.grid-cell.element-e2 {background-color: #fff27f;}
+.grid-cell.element-e3 {background-color: #7fbfff;}
+.grid-cell.element-e4 {background-color: #7fff7f;}
+.grid-cell.element-e5 {background-color: #bf7fff;}
+.grid-cell.element-e6 {background-color: #ffa07a;}
+.grid-cell.element-e7 {background-color: #bfbfbf;}
+.grid-cell.element-e8 {background-color: #ffd27f;}
 
 /* アクションの背景色（要素に基づいた薄い色） */
-.grid-cell.action-element-1 {background-color: #fdf0f0;}
-.grid-cell.action-element-2 {background-color: #fcf9e5;}
-.grid-cell.action-element-3 {background-color: #e7f6fe;}
-.grid-cell.action-element-4 {background-color: #e8fce8;}
-.grid-cell.action-element-5 {background-color: #f6eeff;}
-.grid-cell.action-element-6 {background-color: #fdf1ec;}
-.grid-cell.action-element-7 {background-color: #f0f0f0;}
-.grid-cell.action-element-8 {background-color: #fdf8e8;}
+.grid-cell.action-e1 {background-color: #fdf0f0;}
+.grid-cell.action-e2 {background-color: #fcf9e5;}
+.grid-cell.action-e3 {background-color: #e7f6fe;}
+.grid-cell.action-e4 {background-color: #e8fce8;}
+.grid-cell.action-e5 {background-color: #f6eeff;}
+.grid-cell.action-e6 {background-color: #fdf1ec;}
+.grid-cell.action-e7 {background-color: #f0f0f0;}
+.grid-cell.action-e8 {background-color: #fdf8e8;}
 
 /* ホバー時の効果 */
 .grid-cell:hover {

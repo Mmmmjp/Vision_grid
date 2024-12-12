@@ -28,12 +28,12 @@ public class MandalaElementsServlet extends HttpServlet {
 
     	// Vision IDを取得
         HttpSession session = request.getSession();
-        VisionBeans currentVision = (VisionBeans) session.getAttribute("currentVision");
-        if (currentVision == null) {
+        VisionBeans vision = (VisionBeans) session.getAttribute("vision");
+        if (vision == null) {
             response.sendRedirect("MyPageServlet");
             return;
         }
-        int visionId = currentVision.getVisionId();
+        int visionId = vision.getVisionId();
         
         //daoに渡すためのリストを準備
         List<ElementBeans> elementsList = new ArrayList<>();

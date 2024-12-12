@@ -22,7 +22,7 @@
 
     <main>
         <h2>ELEMENTS SETTING</h2>
-        <p><c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${currentVision.visionKey}" />】 に対する要素</p>
+        <p><c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 に対する要素</p>
         <img src="${pageContext.request.contextPath}/images/mandala_sheet.png" alt="目標シート画像" style="max-width: 100%; height: auto;">
 
         <!-- エラーメッセージが設定されている場合に表示 -->

@@ -13,7 +13,7 @@
         <c:if test="${position != 'vision'}">
             <c:forEach var="element" items="${elementsList}">
                 <c:if test="${element.position == position}">
-                    <div class="grid-cell element-${element.elementId}">
+                    <div class="grid-cell element-${element.position}">
                         <c:out value="${element.elementKey}" />
                     </div>
                 </c:if>
@@ -24,7 +24,7 @@
         <c:if test="${position != 'vision'}">
             <c:forEach var="action" items="${actionsList}">
                 <c:if test="${action.position == position}">
-                    <div class="grid-cell action-element-${action.elementId}">
+                    <div class="grid-cell action-${action.position}">
                         <c:out value="${action.actionKey}" />
                     </div>
                 </c:if>

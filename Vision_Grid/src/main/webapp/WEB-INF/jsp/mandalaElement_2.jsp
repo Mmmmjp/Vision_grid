@@ -23,7 +23,7 @@
     <main>
         <h2>E2 ACTIONS SETTING</h2>
         <p>
-            <c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${currentVision.visionKey}" />】 <br>
+            <c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 <br>
             要素2: <c:out value="${elementKeysList[1]}" /> に対してのアクション！
         </p>
 

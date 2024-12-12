@@ -64,6 +64,12 @@ public class MandalaE8ActionServlet extends HttpServlet {
             forwardToPage(request, response, "WEB-INF/jsp/mandalaElement_8.jsp");
             return;
         }
+        
+        // 不要なセッションスコープのデータを削除
+        session.removeAttribute("elementIdsList");
+        session.removeAttribute("elementKeysList");
+        session.removeAttribute("currentVision");
+        System.out.println("セッションスコープからの削除完了:elementIdsList,elementKeysList,currentVision");
 
         // 次のページにフォワード
         forwardToPage(request, response, "WEB-INF/jsp/mandalaComplete.jsp");

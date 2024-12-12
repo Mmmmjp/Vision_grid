@@ -46,7 +46,7 @@ public class MandalaVisionServlet extends HttpServlet {
 		if (visionId > 0) {
             // データ保存が成功した場合、visionIdをセッションスコープに保存
             vision.setVisionId(visionId);
-            session.setAttribute("currentVision", vision);
+            session.setAttribute("vision", vision);
 
             // 次のページにフォワード
             RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/mandalaElements.jsp");

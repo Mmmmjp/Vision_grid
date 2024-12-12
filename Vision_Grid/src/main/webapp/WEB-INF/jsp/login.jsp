@@ -38,6 +38,8 @@
                     
             <input type="submit" value="ログイン"> 
         </form>
+        
+        <a href="index.jsp">TOP画面に戻る</a>
     </main>
 
     <!-- フッターのインクルード -->

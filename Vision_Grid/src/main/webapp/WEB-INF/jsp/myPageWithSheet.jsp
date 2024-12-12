@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core"%>
 
 <!DOCTYPE html>
@@ -22,14 +21,13 @@
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
 	<main>
-	    
-	<!-- GridSheetのインクルード --> 
-    <jsp:include page="/WEB-INF/jsp/includes/gridSheet.jsp" />
+		<!-- GridSheetのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/gridSheet.jsp" />
         
     	<a href="LogoutServlet">ログアウト</a>
 	</main>
 
     <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" /> 
 </body>
 </html>
