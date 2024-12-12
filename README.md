@@ -270,3 +270,96 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 
 ---
 
+### 目標達成シートの作成完了までのディレクトリ構成
+```
+.
+└── VisionGrid/
+    ├── java/
+    │   ├── servlet/
+    │   │   ├── LoginServlet.java
+    │   │   ├── RegisterServlet.java
+    │   │   ├── RegCompleteServlet.java
+    │   │   ├── LogoutServlet.java
+    │   │   ├── MyPageServlet.java 
+    │   │   ├── MandalaIntroServlet.java
+    │   │   ├── MandalaVisionServlet.java
+    │   │   ├── MandalaElementsServlet.java
+    │   │   ├── MandalaE1ActionServlet.java
+    │   │   ├── MandalaE2ActionServlet.java
+    │   │   ├── MandalaE3ActionServlet.java
+    │   │   ├── MandalaE4ActionServlet.java
+    │   │   ├── MandalaE5ActionServlet.java
+    │   │   ├── MandalaE6ActionServlet.java
+    │   │   ├── MandalaE7ActionServlet.java
+    │   │   └── MandalaE8ActionServlet.java
+    │   ├── model/
+    │   │   ├── AccountBeans.java[java beans]
+    │   │   ├── LoginLogic.java
+    │   │   ├── RegisterLogic.java
+    │   │   ├── VisionBeans[java beans]
+    │   │   ├── ElementBeans[java beans]
+    │   │   ├── ActionBeans[java beans]
+    │   │   ├── VisionFetchLogic.java
+    │   │   ├── ElementsFetchLogic.java
+    │   │   ├── ActionsFetchLogic.java
+    │   │   ├── ElementsSetLogic.java
+    │   │   ├── VisionSetLogic.java
+    │   │   └── ActionsSetLogic.java
+    │   ├── filter/
+    │   │   ├── SetEncodingFilter.java
+    │   │   └── AuthenticationFilter.java
+    │   ├── dao/
+    │   │   ├── BaseDAO.java
+    │   │   ├── AccountsDAO.java
+    │   │   ├── AccountRegisterDAO.java
+    │   │   ├── VisionFetchDAO.java
+    │   │   ├── ElementsFetchDAO.java
+    │   │   ├── ActionsFetchDAO.java
+    │   │   ├── VisionSetDAO.java
+    │   │   ├── ElementsSetDAO.java
+    │   │   └── ActionsSetDAO.java
+    │   └── test/
+    │       ├── AccountsDAOTest.java 
+    │       ├── LoginLogicTest.java
+    │       ├── VisionFetchDAOTest.java
+    │       ├── VisionFetchLogicTest.java
+    │       ├── ElementsFetchDAOTest.java
+    │       ├── ElementsFetchLogicTest.java
+    │       ├── ActionsFetchDAOTest.java
+    │       ├── ActionsFetchLogicTest.java
+    │       └── MandalaCreationTest.java
+    └── webapp/
+        ├── css/
+        │   ├── reset.css
+        │   ├── style.css
+        │   └── gridSheet.jsp
+        ├── images
+        ├── WEB-INF/
+        │   └── jsp/
+        │       ├── includes/
+        │       │   ├── header.jsp
+        │       │   ├── footer.jsp
+        │       │   ├── gridSheet.jsp
+        │       │   └── _gridRow.jspf
+        │       ├── login.jsp
+        │       ├── loginSuccess.jsp
+        │       ├── registerConfirm.jsp
+        │       ├── registerSuccess.jsp
+        │       ├── myPageNoSheet.jsp
+        │       ├── myPageWithSheet.jsp
+        │       ├── mandalaVision.jsp
+        │       ├── mandalaVision.jsp
+        │       ├── mandalaElements.jsp
+        │       ├── mandalaElement_1.jsp
+        │       ├── mandalaElement_2.jsp
+        │       ├── mandalaElement_3.jsp
+        │       ├── mandalaElement_4.jsp
+        │       ├── mandalaElement_5.jsp
+        │       ├── mandalaElement_6.jsp
+        │       ├── mandalaElement_7.jsp
+        │       ├── mandalaElement_8.jsp
+        │       ├── mandalaComplete.jsp
+        │       └── mandala_error.jsp
+        └── index.jsp
+```
+
