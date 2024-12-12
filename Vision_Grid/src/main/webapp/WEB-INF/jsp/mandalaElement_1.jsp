@@ -29,6 +29,13 @@
 
         <img src="${pageContext.request.contextPath}/images/mandala_sheet.png" alt="目標シート画像" style="max-width: 100%; height: auto;">
 
+        <!-- エラーメッセージが設定されている場合に表示 -->
+	<c:if test="${not empty errorMessage}">
+	    <div class="error-message" style="color: red; font-weight: bold;">
+	        ${errorMessage}
+	    </div>
+	</c:if>
+        
         <form action="MandalaE1ActionServlet" method="post">
             <!-- アクションA〜Hの入力欄 -->
             <c:forEach var="letter" items="A,B,C,D,E,F,G,H">

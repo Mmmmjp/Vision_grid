@@ -25,6 +25,13 @@
         <p><c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${currentVision.visionKey}" />】 に対する要素</p>
         <img src="${pageContext.request.contextPath}/images/mandala_sheet.png" alt="目標シート画像" style="max-width: 100%; height: auto;">
 
+        <!-- エラーメッセージが設定されている場合に表示 -->
+		<c:if test="${not empty errorMessage}">
+		    <div class="error-message" style="color: red; font-weight: bold;">
+		        ${errorMessage}
+		    </div>
+		</c:if>
+		
         <form action="${pageContext.request.contextPath}/MandalaElementsServlet" method="post">
             <!-- 要素1〜8の入力欄 -->
             <c:forEach var="i" begin="1" end="8">
