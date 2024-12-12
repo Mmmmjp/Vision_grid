@@ -1,5 +1,6 @@
 package servlet;
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,30 +17,36 @@ import model.ElementsFetchLogic;
 import model.ElementsSetLogic;
 import model.VisionBeans;
 
+
 @WebServlet("/MandalaElementsServlet")
 public class MandalaElementsServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+    	// Vision IDを取得
         HttpSession session = request.getSession();
         VisionBeans currentVision = (VisionBeans) session.getAttribute("currentVision");
         if (currentVision == null) {
             response.sendRedirect("MyPageServlet");
             return;
         }
-
-        // Vision IDを取得
         int visionId = currentVision.getVisionId();
+        
+        //daoに渡すためのリストを準備
         List<ElementBeans> elementsList = new ArrayList<>();
+
 
         // パラメータの取得とElementBeansインスタンスの作成
         for (int i = 1; i <= 8; i++) {
             String keyParam = request.getParameter("e" + i + "Key");
             String textParam = request.getParameter("e" + i + "Text");
 
+
             System.out.println("Key: " + keyParam + ", Text: " + textParam); // デバッグ用
+
 
             if (keyParam != null && !keyParam.trim().isEmpty()) {
                 // textParamが空の場合、nullに設定
@@ -62,6 +69,7 @@ public class MandalaElementsServlet extends HttpServlet {
             return;
         }
 
+
         // 要素をデータベースに保存し要素idを取得
         ElementsSetLogic elementsSetLogic = new ElementsSetLogic();
         List<Integer> elementIdsList;
@@ -74,14 +82,16 @@ public class MandalaElementsServlet extends HttpServlet {
             dispatcher.forward(request, response);
             return;
         }
-        
+
         // 要素のキーリストを取得
         ElementsFetchLogic elementsFetchLogic = new ElementsFetchLogic();
         List<String> elementKeysList = elementsFetchLogic.getElementKeysByVisionId(visionId);
 
+
         // 成功した場合、IDのリストをセッションに保存
         session.setAttribute("elementIdsList", elementIdsList);
         session.setAttribute("elementKeysList", elementKeysList);
+
 
         // 次のページにフォワード
         RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/mandalaElement_1.jsp");
