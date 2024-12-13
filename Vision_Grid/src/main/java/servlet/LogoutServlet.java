@@ -26,7 +26,7 @@ public class LogoutServlet extends HttpServlet {
         // ログアウトメッセージを設定
         request.setAttribute("logoutMessage", "ログアウトしました");
         
-        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("LoginServlet");
         dispatcher.forward(request, response);
         
 	}
