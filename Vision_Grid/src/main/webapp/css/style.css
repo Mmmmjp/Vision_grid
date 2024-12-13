@@ -1,29 +1,332 @@
 @charset "UTF-8";
 
+/* 共通変数 ============================================== */
 :root {
-    --orange:#ec9b4d;
-    --dark-orange:#c86c36;
-    --green:#76c53a;
-    --darker-green:#5ac463;
-    --black:#3e3e3e;
-    --gray:#cccccc;
-}	
-
-body {
-    font-family: "M PLUS Rounded 1c", serif;
-    font-weight: 500;
-    font-style: normal;
-    color: var(--black);
+    --orange: #ec9b4d;
+    --dark-orange: #c86c36;
+    --black: #3e3e3e;
+    --gray: #cccccc;
+    --green: #76c53a;
+    --darker-green: #5ac463;
+    --light-green: #e9f7e9;
+    --light-orange:rgba(236, 155, 77, 0.2);
 }
+
+/* ベーススタイリング ======================================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: var(--black);
+    font-family: "M PLUS Rounded 1c", serif;
+    background-color: #fff;
+    font-size: 100%;
+}
+
+main {
+    margin: 120px auto; /* ヘッダーを避けるためのマージン */
+    padding: 20px;
+    max-width: 1200px;
+    line-height: 1.7;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* ヘッダー ================================================= */
 header {
     background-color: var(--orange);
-}
-header h1{
-    font-size: 2rem;
-    color: white;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* 中央揃えを適用 */
+    width: 85%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 0 0 3rem 3rem;
 }
 
+header h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
+
+/* フッター ================================================= */
 footer {
     background-color: var(--dark-orange);
-    color:white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* タイトル ================================================= */
+
+/* 共通のページタイトル ---------------*/
+.page-title {
+    font-size: 2rem; 
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--black); 
+    font-weight: bold;
+    position: relative; /* 疑似要素を配置するための基点 */
+}
+
+/* タイトル下の線 */
+.page-title::after {
+    content: '';
+    display: block;
+    width: 80px; 
+    height: 4px; 
+    background-color: var(--orange); 
+    margin: 10px auto 0; 
+    border-radius: 2px; 
+    opacity: 0; /* 初期状態は非表示 */
+    transform: scaleX(0); /* 初期状態で縮小 */
+    transform-origin: center; /* 線の中央を基準にアニメーション */
+    animation: fade-and-grow 1.5s ease-out forwards; /* アニメーションを適用 */
+}
+
+/* 線のアニメーション */
+@keyframes fade-and-grow {
+    0% {
+        opacity: 0; /* 完全に非表示 */
+        transform: scaleX(0); /* 線が縮小された状態 */
+    }
+    50% {
+        opacity: 1; /* 線が表示され始める */
+        transform: scaleX(0.5); /* 半分の長さに拡大 */
+    }
+    100% {
+        opacity: 1; /* 完全に表示 */
+        transform: scaleX(1); /* 線が完全に拡大 */
+    }
+}
+
+.sub_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--green);
+}
+
+
+/* エラーメッセージ */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ボタン ================================================= */
+
+/* TOPへボタン */
+
+/* 普通のボタン「オレンジ」 */
+.orange-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.orange-btn:hover {
+    background-color: var(--dark-orange);
+}
+
+/* 重要ボタン「グリーン」 */
+.green-cta-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--green);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.green-cta-btn:hover {
+    background-color: var(--darker-green);
+    transform: translateY(-3px); /* ホバー時の浮き上がり効果 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.green-cta-btn:active {
+    transform: translateY(1px); /* クリック時の押し込み効果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 新規登録サブミットボタン */
+.register-form input[type="submit"] {
+    background-color: var(--green);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-form input[type="submit"]:hover {
+    background-color: var(--darker-green);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* TOPページ============================================= */
+
+/* Call-to-Actionセクション */
+.call-to-action {
+    background-color: var(--light-green);
+    padding: 30px 20px;
+    border-radius: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* テキストを左寄せ */
+    justify-items: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* ボタンを左揃え */
+}
+
+
+/* 新規登録フォーム ====================================== */
+
+.register-main {
+    text-align: center; /* 全体を中央揃え */
+}
+
+/* TOPへボタン専用のコンテナ */
+.top-link-container {
+    margin-top: 20px;
+    text-align: center; /* ボタンを中央揃え */
+}
+
+.register-form {
+    background-color: var(--light-orange);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+
+.register-form .form-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; 
+    color: var(--orange); 
+    font-size: 1.1rem; 
+    letter-spacing: 0.5px; 
+    text-transform: capitalize; 
+    transition: color 0.3s ease; 
+}
+
+
+/* ラベルのホバー効果 */
+.register-form .form-title:hover {
+    color: var(--dark-orange); /* ホバー時に少し濃いオレンジ色に変化 */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* ホバー時にわずかな影を付けて強調 */
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="password"]:focus,
+.register-form input[type="date"]:focus {
+    border-color: var(--orange);
+    outline: none;
+}
+
+.register-form .radio-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-buttons {
+    text-align: center; /* ボタンを中央揃え */
+    margin-top: 40px;
+}
+
+/* 内容確認画面 */
+.form-item {
+    font-weight: bold;
+    color: var(--orange); 
+    font-size: 1.1rem; 
+    letter-spacing: 0.5px; 
+    text-transform: capitalize; 
+    transition: color 0.3s ease; 
+}
+
+.form-item:hover {
+    color: var(--dark-orange); /* ホバー時に少し濃いオレンジ色に変化 */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); /* ホバー時にわずかな影を付けて強調 */
+}
+
+.register-form p {
+    position: relative; /* ::after を正しく配置するため */
+    margin-bottom: 0.5rem;
+    text-align: center; /* テキストを中央揃えにする */
+}
+
+.register-form p::after {
+    content: '';
+    display: block;
+    width: 50%; 
+    height: 1px; 
+    background-color: var(--gray); 
+    margin: 0 auto; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0; 
+    right: 0; 
+}
+

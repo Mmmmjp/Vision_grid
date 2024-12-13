@@ -4,3 +4,4 @@
 <footer>
     <p>&copy; 2024 Vision Grid. All rights reserved.</p>
 </footer>
+

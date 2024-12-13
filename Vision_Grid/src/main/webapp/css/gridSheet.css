@@ -1,11 +1,23 @@
 @charset "UTF-8";
 
+/* 共通変数 ============================================== */
+:root {
+    --orange: #ec9b4d;
+    --dark-orange: #c86c36;
+    --black: #3e3e3e;
+    --gray: #cccccc;
+    --green: #76c53a;
+    --darker-green: #5ac463;
+    --light-green: #e9f7e9;
+    --light-orange:rgba(236, 155, 77, 0.2);
+}
+
 /* グリッド全体のスタイル */
 .grid-sheet {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(9, 1fr); /* 9列の均等幅 */
     gap: 0;
-    border: 3px solid black;
+    border: 3px solid var(--black); /* 外枠の太線 */
     width: 100%;
     box-sizing: border-box;
 }
@@ -16,40 +28,36 @@
     text-align: center;
     padding: 10px;
     font-size: 14px;
-    border: 1px solid black;
+    border: 1px solid var(--black); /* デフォルトの細い線 */
     transition: background-color 0.3s ease;
     word-break: break-word;
 }
 
 /* 中央のVISIONセルのスタイル */
 .grid-cell.vision {
-    background-color: orange;
+    background-color: var(--dark-orange);
     font-weight: bold;
     color: white;
 }
 
-/* 要素ごとのセルの色設定（濃い色） */
-.grid-cell.element-e1 {background-color: #ff9999;}
-.grid-cell.element-e2 {background-color: #fff27f;}
-.grid-cell.element-e3 {background-color: #7fbfff;}
-.grid-cell.element-e4 {background-color: #7fff7f;}
-.grid-cell.element-e5 {background-color: #bf7fff;}
-.grid-cell.element-e6 {background-color: #ffa07a;}
-.grid-cell.element-e7 {background-color: #bfbfbf;}
-.grid-cell.element-e8 {background-color: #ffd27f;}
+/* 要素ごとのセルの色設定 */
+.grid-cell.element-e1 { background-color: #ff9999; }
+.grid-cell.element-e2 { background-color: #fff27f; }
+.grid-cell.element-e3 { background-color: #7fbfff; }
+.grid-cell.element-e4 { background-color: #7fff7f; }
+.grid-cell.element-e5 { background-color: #bf7fff; }
+.grid-cell.element-e6 { background-color: #ffa07a; }
+.grid-cell.element-e7 { background-color: #e291c0; }
+.grid-cell.element-e8 { background-color: #ffd27f; }
 
-/* アクションの背景色（要素に基づいた薄い色） */
-.grid-cell.action-e1 {background-color: #fdf0f0;}
-.grid-cell.action-e2 {background-color: #fcf9e5;}
-.grid-cell.action-e3 {background-color: #e7f6fe;}
-.grid-cell.action-e4 {background-color: #e8fce8;}
-.grid-cell.action-e5 {background-color: #f6eeff;}
-.grid-cell.action-e6 {background-color: #fdf1ec;}
-.grid-cell.action-e7 {background-color: #f0f0f0;}
-.grid-cell.action-e8 {background-color: #fdf8e8;}
+/* 要素を区切る太いボーダー線のスタイル */
+.grid-cell.border-top { border-top: 3px solid var(--black); }
+.grid-cell.border-bottom { border-bottom: 3px solid var(--black)k; }
+.grid-cell.border-left { border-left: 3px solid var(--black); }
+.grid-cell.border-right { border-right: 3px solid var(--black); }
 
 /* ホバー時の効果 */
 .grid-cell:hover {
-    background-color: #ffa07a;
+    background-color: var(--dark-orange);
     cursor: pointer;
 }

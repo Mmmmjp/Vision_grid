@@ -21,10 +21,14 @@
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
     <main>
-        <h2>ログインページ</h2>
+        <h2 class="page-title">ログインページ</h2>
         
         <c:if test="${not empty errorMsg}">
             <p style="color: red;">${errorMsg}</p>
+        </c:if>
+        
+        <c:if test="${not empty logoutMessage}">
+            <p style="color: green;">${logoutMessage}</p>
         </c:if>
 
         <form action="LoginServlet" method="post">
@@ -39,7 +43,7 @@
             <input type="submit" value="ログイン"> 
         </form>
         
-        <a href="index.jsp">TOP画面に戻る</a>
+        <a href="index.jsp" class="orange-btn">TOP画面に戻る</a>
     </main>
 
     <!-- フッターのインクルード -->

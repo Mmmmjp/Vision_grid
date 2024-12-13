@@ -20,13 +20,16 @@
     <!-- Headerのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-	<main>
-	    <h2>WELCOME!!</h2>
+	<main class="register-main">
 	    
-         <p>さっそくログインしてみよう！</p>
-         
-        <a href="LoginServlet">ログイン画面へ</a>
-    	<a href="index.jsp">TOPへ戻る</a>
+        <h2 class="page-title">WELCOME!!</h2>
+	    
+        <div class="register-form">
+            <p>さっそくログインしてみよう！</p>
+            
+            <a href="LoginServlet" class="green-cta-btn form-buttons">ログイン画面へ</a>
+        </div>
+    	<a href="index.jsp" class="orange-btn top-link-container">TOPへ戻る</a>
 	</main>
 
     <!-- フッターのインクルード -->

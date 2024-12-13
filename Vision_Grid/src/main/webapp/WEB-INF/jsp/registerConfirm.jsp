@@ -20,27 +20,29 @@
     <!-- Headerのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-	<main>
-	    <h2>REGISTER - CONFIRMATION</h2>
+	<main class="register-main">
+	    <h2 class="page-title">新規登録 - 内容確認ページ</h2>
 	    
 	    <c:if test="${not empty errorMsg}">
           <p style="color: red;">${errorMsg}</p>
         </c:if>
  		
- 		<div>
-        	<p><strong>ユーザ名:</strong> <c:out value="${pendingAccount.userName}" /></p>
-          	<p><strong>パスワード:</strong> <c:out value="${pendingAccount.password}" /></p>
-          	<p><strong>名前:</strong> <c:out value="${pendingAccount.realName}" /></p>
-            <p><strong>生年月日:</strong> <c:out value="${pendingAccount.dob}" /></p>
-            <p><strong>性別:</strong> <c:out value="${pendingAccount.gender}" /></p>
+ 		<div class="register-form">
+        	<p><span class="form-item">ユーザ名:</span> <c:out value="${pendingAccount.userName}" /></p>
+          	<p><span class="form-item">パスワード:</span> <c:out value="${pendingAccount.password}" /></p>
+          	<p><span class="form-item">名前:</span> <c:out value="${pendingAccount.realName}" /></p>
+            <p><span class="form-item">生年月日:</span> <c:out value="${pendingAccount.dob}" /></p>
+            <p><span class="form-item">性別:</span> <c:out value="${pendingAccount.gender}" /></p>
+        
+            <form action="RegCompleteServlet" method="post" class="form-buttons">
+                <input type="submit" value="この内容で登録する">
+            </form>
         </div>
             
-        <form action="RegCompleteServlet" method="post">
-                <input type="submit" value="この内容で登録する">
-        </form>
+        
         </div>
         
-    	<a href="RegisterServlet">登録画面へ戻る</a>
+    	<a href="RegisterServlet" class="orange-btn">登録画面へ戻る</a>
 	</main>
 
     <!-- フッターのインクルード -->
