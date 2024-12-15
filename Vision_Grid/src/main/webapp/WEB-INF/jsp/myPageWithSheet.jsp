@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/gridSheet.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -21,10 +26,16 @@
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
 	<main>
+
+        <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんの目標:【<c:out value="${vision.visionKey}" />】</h2>
+        
+
 		<!-- GridSheetのインクルード -->
         <jsp:include page="/WEB-INF/jsp/includes/gridSheet.jsp" />
         
-    	<a href="LogoutServlet">ログアウト</a>
+        <div class="orange-btn-container">
+    	    <a href="LogoutServlet" class="orange-btn">ログアウト</a>
+        </div>
 	</main>
 
     <!-- フッターのインクルード -->

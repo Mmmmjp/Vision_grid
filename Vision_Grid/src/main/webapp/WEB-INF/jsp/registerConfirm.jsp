@@ -14,6 +14,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -35,7 +40,7 @@
             <p><span class="form-item">性別:</span> <c:out value="${pendingAccount.gender}" /></p>
         
             <form action="RegCompleteServlet" method="post" class="form-buttons">
-                <input type="submit" value="この内容で登録する">
+                <input type="submit" value="この内容で登録する" class="cta-btn">
             </form>
         </div>
             

@@ -16,40 +16,54 @@
     <!-- CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+    <!-- js -->
+    <script src="${pageContext.request.contextPath}/js/animation.js" defer></script>
 </head>
 <body>
     <!-- ヘッダーのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
     <!-- メインコンテンツ -->
-    <main class="top-main">
+    <main>
 
         <h2 class="page-title">Vision Gridへようこそ</h2>
-        <section class="introduction">
-            <h3 class="sub_title">アプリケーションについて</h3>
-            <p>
-                Vision Gridは、目標設定と達成をサポートするために設計されたWebアプリケーションです。
-                <br>Mandalaチャートにインスパイアされた構造を採用し、ユーザーが大きな目標を具体的な要素やタスクに分解し、
-                達成への道筋を視覚的かつ効率的に管理できる仕組みを提供します。
-            </p>
-        </section>
-        
-        <section class="target-users">
-            <h3 class="sub_title">こんな方におすすめ</h3>
-            <ul>
-                <li>目標を達成するための具体的なプロセスを明確にしたい方。</li>
-                <li>就職活動やキャリアの転換期にいる方。</li>
-                <li>学びの目的を明確化し、継続的に振り返りたい方。</li>
-            </ul>
-        </section>
+
+        <div class="wrapper-center">
+            <section class="introduction">
+                <h3 class="sub_title">アプリケーションについて</h3>
+                <p>
+                    Vision Gridは、目標の設定から達成までをサポートするWebアプリケーションです。  
+                    Mandalaチャートを採用し、目標を具体的なタスクに分解して管理できます。  
+                    作成したシートはいつでも確認や振り返りが可能です。  
+                    このアプリ一つで、目標達成に必要なすべての機能が揃っています。  
+                    Vision Gridは、あなたの目標達成を全力で応援します。
+                </p>
+            </section>
+            
+            <section class="wrapper-center">
+                <h3 class="sub_title">こんな方におすすめ</h3>
+                <div class="target-users">
+                    <ul>
+                        <li>目標を達成するための具体的なプロセスを明確にしたい方。</li>
+                        <li>就職活動やキャリアの転換期にいる方。</li>
+                        <li>学びの目的を明確化し、継続的に振り返りたい方。</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
                 
-        <section class="call-to-action">
-            <p>
+        <section class="call-to-action animate-section">
+            <p class="strong-message">
                 さっそくアカウントを作成して、Vision Gridであなたの目標達成を始めましょう。
             </p>
             <div class="cta-buttons">
-                <a href="RegisterServlet" class="green-cta-btn">新規アカウント作成</a>
-                <a href="LoginServlet" class="green-cta-btn">ログイン</a>
+                <a href="RegisterServlet" class="cta-btn cta-btn-atag">新規アカウント作成</a>
+                <a href="LoginServlet" class="cta-btn cta-btn-atag">ログイン</a>
             </div>
         </section>
     </main>

@@ -2,6 +2,6 @@
     pageEncoding="UTF-8"%>
 
 <header>
-    <h1>Vision Grid</h1>
+    <h1><img src="images/vision_grid_logo.png" alt="Vision Grid" class="header-logo"></h1>
 </header>
 

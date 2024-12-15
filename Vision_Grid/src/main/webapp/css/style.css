@@ -24,15 +24,30 @@ html, body {
 }
 
 main {
-    margin: 120px auto; /* ヘッダーを避けるためのマージン */
+    margin: 120px auto 100px; /* ヘッダーを避けるためのマージン */
     padding: 20px;
-    max-width: 1200px;
+    max-width: 2000px;
     line-height: 1.7;
 }
 
+
 section {
     margin-bottom: 2rem;
+    width: 70%;
 }
+
+.align-center{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* 真ん中寄せのラッパー */
+.wrapper-center {
+    justify-items: center;
+    align-items: center;
+}
+
 
 /* ヘッダー ================================================= */
 header {
@@ -57,10 +72,15 @@ header h1 {
     margin: 0;
 }
 
+.header-logo {
+    height: 80px; /* ロゴの高さを調整 */
+    width: auto;  /* 幅は高さに合わせて自動調整 */
+}
+
 /* フッター ================================================= */
 footer {
     background-color: var(--dark-orange);
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -120,6 +140,7 @@ footer {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--green);
+    text-align: center;
 }
 
 
@@ -130,11 +151,24 @@ footer {
     margin-bottom: 15px;
 }
 
+/* ログアウトメッセージ */
+
+.logout-message {
+    color: var(--darker-green);
+    margin-bottom: 15px;
+}
+
+/* 強調 メッセージ */
+.strong-message {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+
 /* ボタン ================================================= */
 
-/* TOPへボタン */
-
-/* 普通のボタン「オレンジ」 */
+/* 普通のボタン「オレンジ」- Topへ-------- */
 .orange-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -151,52 +185,52 @@ footer {
     background-color: var(--dark-orange);
 }
 
-/* 重要ボタン「グリーン」 */
-.green-cta-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: var(--green);
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+/* Orangeボタン専用のコンテナ */
+.orange-btn-container {
+    margin-top: 20px;
+    text-align: center; /* ボタンを中央揃え */
 }
 
-.green-cta-btn:hover {
-    background-color: var(--darker-green);
-    transform: translateY(-3px); /* ホバー時の浮き上がり効果 */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
+/* 重要ボタン「グリーン」----------- */
 
-.green-cta-btn:active {
-    transform: translateY(1px); /* クリック時の押し込み効果 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* 新規登録サブミットボタン */
-.register-form input[type="submit"] {
+.cta-btn {
     background-color: var(--green);
     color: white;
     padding: 12px 25px;
-    border: none;
     border-radius: 25px;
     font-size: 1rem;
     font-weight: bold;
-    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.register-form input[type="submit"]:hover {
+.cta-btn:hover {
     background-color: var(--darker-green);
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
+.cta-btn:active {
+    transform: translateY(1px); /* クリック時の押し込み効果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-/* TOPページ============================================= */
+/* Atag */
+.cta-btn-atag {
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;  
+}
+
+/* form - submit  */
+form input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* スタイルセット============================================= */
 
 /* Call-to-Actionセクション */
 .call-to-action {
@@ -211,10 +245,7 @@ footer {
 }
 
 .call-to-action p {
-    font-size: 1.2rem;
-    font-weight: bold;
     margin-bottom: 20px;
-    color: var(--black);
 }
 
 .cta-buttons {
@@ -224,16 +255,66 @@ footer {
 }
 
 
+
+/* TOPページ============================================ */
+
+
+/* introduction section  */
+.introduction {
+    background-color: #f9f9f9; 
+    padding: 40px 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Target users lists */
+.target-users {
+    width: 60%;
+
+}
+
+/* リストの装飾 */
+ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #555;
+}
+ul li::before {
+    content: "✔"; /* チェックマーク */
+    position: absolute;
+    left: 0;
+    color: #28a745; /* 緑色 */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* CTA sections-------- */
+/* 初期状態: 非表示 */
+.animate-section {
+    opacity: 0;
+    transform: translateY(20px); /* 少し下から上に移動するような効果 */
+    transition: all 0.6s ease-in-out;
+}
+
+/* フェードイン効果 */
+.animate-section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* 新規登録フォーム ====================================== */
 
 .register-main {
     text-align: center; /* 全体を中央揃え */
-}
-
-/* TOPへボタン専用のコンテナ */
-.top-link-container {
-    margin-top: 20px;
-    text-align: center; /* ボタンを中央揃え */
 }
 
 .register-form {
@@ -329,4 +410,85 @@ footer {
     left: 0; 
     right: 0; 
 }
+
+/* ログインフォーム============================ */
+
+/* ラベルと入力欄を同じ行に並べる */
+.call-to-action.login-form .form-group {
+    display: flex; /* Flexboxで横並び */
+    align-items: center; 
+    margin-bottom: 15px; 
+}
+
+.call-to-action.login-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-right: 10px; 
+    width: 120px; 
+    text-align: right; 
+    cursor: pointer; 
+}
+
+/* 入力欄のスタイル */
+.call-to-action.login-form input[type="text"],
+.call-to-action.login-form input[type="password"] {
+    flex: 1; /* 入力欄を残りのスペースに広げる */
+    padding: 10px 15px;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--black);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.call-to-action.login-form input[type="text"]:focus,
+.call-to-action.login-form input[type="password"]:focus {
+    border-color: var(--orange);
+    outline: none;
+}
+
+/* MY Page ================================ */
+
+
+/* manadala introcustion page ================= */
+
+/* SKIP button */
+.skip-btn {
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: var(--gray);
+    background-color: transparent;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.skip-btn:hover {
+    color: var(--black);
+    background-color: var(--light-orange);
+    border-color: var(--orange);
+} 
+
+/* title */
+
+.intro-title {
+    border-left: 6px solid var(--darker-green);
+    border-radius: 3px; 
+    padding: 0 0 0 0.5rem; 
+    font-weight: bold;
+    font-size: 1.4rem; 
+}
+
+
+
+
+
 

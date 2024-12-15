@@ -14,6 +14,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -64,8 +69,8 @@
             </div>
         </form>
 
-		<div class="top-link-container">
-			<a href="index.jsp" class="orange-btn">TOPへ</a>
+		<div class="orange-btn-container">
+			<a href="index.jsp" class="orange-btn">TOP画面に戻る</a>
 		</div>
     </main>
 

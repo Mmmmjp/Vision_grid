@@ -14,6 +14,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+    <!-- js -->
+    <script src="${pageContext.request.contextPath}/js/animation.js" defer></script>
 </head>
 
 <body>
@@ -21,12 +28,16 @@
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
 	<main>
-    <h2>WELCOME</h2>
+    <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんおかえりなさい</h2>
     
-    <p>ようこそ<c:out value="${loggedInUser.userName}" />さん</p>
-    
-    <a href="MyPageServlet">マイページへ</a>
-	</main>
+    <div class="call-to-action">
+        <p class="strong-message inspiration-message">
+            <c:out value="${inspirationMessage}" />
+        </p>
+        
+        <a href="MyPageServlet" class="cta-btn cta-btn-atag">マイページへ</a>
+        </main>
+    </div>
 
     <!-- フッターのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />

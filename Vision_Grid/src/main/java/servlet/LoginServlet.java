@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import model.AccountBeans;
+import model.InspirationMessageLogic;
 import model.LoginLogic;
 
 
@@ -54,6 +55,13 @@ public class LoginServlet extends HttpServlet {
 		if (loggedInUser != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("loggedInUser",loggedInUser);
+			
+			// ランダムメッセージ生成ロジックの呼び出し
+	        InspirationMessageLogic messageLogic = new InspirationMessageLogic();
+	        String randomMessage = messageLogic.getRandomMessage();
+
+	        // メッセージをリクエストスコープに保存
+	        request.setAttribute("inspirationMessage", randomMessage);
 			
 			RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/loginSuccess.jsp");
 			dispatcher.forward(request, response);
