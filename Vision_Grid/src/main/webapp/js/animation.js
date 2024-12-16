@@ -1,4 +1,4 @@
-// loginSuccess.jsp - inspiration message
+// loginSuccess.jsp - inspiration message =======================
 
 document.addEventListener("DOMContentLoaded", function () {
     const inspirationMessage = document.querySelector(".inspiration-message");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Top page - CTA section
+// Top page - CTA section =====================================
 document.addEventListener("DOMContentLoaded", () => {
     const animatedSection = document.querySelector(".animate-section");
 
@@ -33,4 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     observer.observe(animatedSection);
+});
+
+// マンダラチャート作成処理にて途中ログアウトをクリックした際のPOPUP====
+    // ページのDOMが完全に読み込まれてから動作
+document.addEventListener("DOMContentLoaded", function() {
+    const logoutLink = document.querySelector(".mandala-logout");
+
+    if (logoutLink) { // 要素が存在する場合のみ実行
+        logoutLink.addEventListener("click", function(event) {
+            // 確認メッセージを表示
+            const userConfirmation = confirm("注意: ページに記入されている情報は保存されません。本当にログアウトしますか？");
+            
+            if (!userConfirmation) {
+                // キャンセルされた場合、リンク遷移を防止
+                event.preventDefault();
+            }
+        });
+    }
 });

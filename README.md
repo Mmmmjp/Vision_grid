@@ -122,8 +122,8 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 ~\Documents\database
 ```
 > [!NOTE]
-> User Name: sa
-> Password: 
+> **User Name** : sa |
+> **Password** : 
 ---
 
 ## Directory Tree

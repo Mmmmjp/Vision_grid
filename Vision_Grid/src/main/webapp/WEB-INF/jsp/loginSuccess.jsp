@@ -24,6 +24,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <!-- Headerのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
@@ -41,5 +42,6 @@
 
     <!-- フッターのインクルード -->
     <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

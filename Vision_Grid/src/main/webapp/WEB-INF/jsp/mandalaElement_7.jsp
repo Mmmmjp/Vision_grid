@@ -19,48 +19,54 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+    <!-- js -->
+    <script src="${pageContext.request.contextPath}/js/animation.js" defer></script>
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-    <main>
-        <h2>E7 ACTIONS SETTING</h2>
-        <p>
-            <c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 <br>
-            要素7: <c:out value="${elementKeysList[6]}" /> に対してのアクション！
-        </p>
-
-        <img src="${pageContext.request.contextPath}/images/mandala_sheet.png" alt="目標シート画像" style="max-width: 100%; height: auto;">
-  
-        <!-- エラーメッセージが設定されている場合に表示 -->
-		<c:if test="${not empty errorMessage}">
-		    <div class="error-message" style="color: red; font-weight: bold;">
-		        ${errorMessage}
-		    </div>
-		</c:if>
-
-        <form action="MandalaE7ActionServlet" method="post">
-            <!-- アクションA〜Hの入力欄 -->
-            <c:forEach var="letter" items="A,B,C,D,E,F,G,H">
-                <div style="margin-bottom: 20px;">
-                    <label for="e7${letter}Key">アクション${letter}:</label>
-                    <input type="text" id="e7${letter}Key" name="e7${letter}Key" placeholder="アクション${letter}を入力" required>
-                </div>
-                <div style="margin-bottom: 20px;">
-                    <label for="e7${letter}Text">アクション${letter}詳細:</label>
-                    <textarea id="e7${letter}Text" name="e7${letter}Text" placeholder="アクション${letter}の詳細を入力" ></textarea>
-                </div>
-            </c:forEach>
+        <main>
+            <h2>E7 ACTIONS SETTING</h2>
+            <a href="LogoutServlet" class="skip-btn mandala-logout">LOGOUT</a>
             
-            <div>
-                <button type="submit">保存して次へ進む</button>
-            </div>
-        </form>
-    </main>
+            <p>
+                <c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 <br>
+                要素7: <c:out value="${elementKeysList[6]}" /> に対してのアクション！
+            </p>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+            <img src="${pageContext.request.contextPath}/images/mandala_sheet.png" alt="目標シート画像" style="max-width: 100%; height: auto;">
+    
+            <!-- エラーメッセージが設定されている場合に表示 -->
+            <c:if test="${not empty errorMessage}">
+                <div class="error-message" style="color: red; font-weight: bold;">
+                    ${errorMessage}
+                </div>
+            </c:if>
+
+            <form action="MandalaE7ActionServlet" method="post">
+                <!-- アクションA〜Hの入力欄 -->
+                <c:forEach var="letter" items="A,B,C,D,E,F,G,H">
+                    <div style="margin-bottom: 20px;">
+                        <label for="e7${letter}Key">アクション${letter}:</label>
+                        <input type="text" id="e7${letter}Key" name="e7${letter}Key" placeholder="アクション${letter}を入力" required>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="e7${letter}Text">アクション${letter}詳細:</label>
+                        <textarea id="e7${letter}Text" name="e7${letter}Text" placeholder="アクション${letter}の詳細を入力" ></textarea>
+                    </div>
+                </c:forEach>
+                
+                <div>
+                    <button type="submit">保存して次へ進む</button>
+                </div>
+            </form>
+        </main>
+
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

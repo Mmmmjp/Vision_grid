@@ -22,22 +22,24 @@
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-	<main>
-        <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんのMYPAGE</h2>
-        <div class="call-to-action">
-            <p>目標達成シートを作成することで、自分の目標を明確にし、一歩ずつ着実に進むことができます。</p>
-            <p>まずは、シートを作成して新しい一歩を踏み出しましょう！</p>
-            <a href="MandalaIntroServlet" class="cta-btn cta-btn-atag">目標達成シートを作成する</a>
-        </div>
-        <div class="orange-btn-container">
-    	    <a href="LogoutServlet" class="orange-btn">ログアウト</a>
-        </div>
-	</main>
+        <main>
+            <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんのMYPAGE</h2>
+            <div class="call-to-action">
+                <p>目標達成シートを作成することで、自分の目標を明確にし、一歩ずつ着実に進むことができます。</p>
+                <p>まずは、シートを作成して新しい一歩を踏み出しましょう！</p>
+                <a href="MandalaIntroServlet" class="cta-btn cta-btn-atag">目標達成シートを作成する</a>
+            </div>
+            <div class="orange-btn-container">
+                <a href="LogoutServlet" class="orange-btn">ログアウト</a>
+            </div>
+        </main>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>
