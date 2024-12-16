@@ -14,6 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/reset.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -48,11 +49,11 @@
                     <c:forEach var="i" begin="1" end="8">
                         <div class="form-section">
                             <p class="form-section-title">要素${i}</p>
-                            <div>
-                                <div class="form-group">
+                            <div class="form-group" >
+                                <div>
                                     <input type="text" id="e${i}Key" name="e${i}Key" placeholder="要素${i}を入力" required>
                                 </div>
-                                <div class="form-group">
+                                <div>
                                     <textarea id="e${i}Text" name="e${i}Text" placeholder="要素${i}の詳細を入力" ></textarea>
                                 </div>
                             </div>

@@ -31,7 +31,7 @@
             
             <img src="${pageContext.request.contextPath}/images/gridsheet_sample/mandala_vision.png" alt="目標シート画像1" class="mandala-img">
 
-            <form action="MandalaVisionServlet" method="post" class="mandala-form vision-setting">
+            <form action="MandalaVisionServlet" method="post" class="mandala-form form-vision">
                 <div>
                     <label for="vision">目標:</label>
                     <input type="text" id="vision" name="vision" placeholder="目標を入力" required>

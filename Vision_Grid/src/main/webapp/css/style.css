@@ -172,6 +172,10 @@ footer {
     font-weight: bold;
 }
 
+.marker-effect {
+    background: linear-gradient(transparent 70%, var(--green) 70%);
+}
+
 
 /* ボタン ================================================= */
 
@@ -523,28 +527,27 @@ ul li::before {
 .mandala-form {
     padding: 30px 20px; 
     margin: 20px auto; 
-    text-align: center; 
 }
 
 /* vision */
-.vision-setting {
+.form-vision { 
     max-width: 600px;
     background-color: var(--light-orange); 
     border-radius: 10px; 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
-
+    text-align: center; 
 }
 
 /* ラベルのスタイル */
-.vision-setting label {
+.form-vision label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
     color: var(--black);
 }
 
-.vision-setting input[type="text"],
-.vision-setting textarea {
+.form-vision input[type="text"],
+.form-vision textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -555,14 +558,12 @@ ul li::before {
     transition: all 0.3s ease;
 }
 
-.vision-setting input[type="text"]:focus,
-.vision-setting textarea:focus {
+.form-vision input[type="text"]:focus,
+.form-vision textarea:focus {
     border-color: var(--orange); 
     box-shadow: 0 0 8px rgba(236, 155, 77, 0.3); 
     outline: none;
 }
-
-
 
 /* elements and actions */
 
@@ -571,17 +572,33 @@ ul li::before {
     background-color: var(--light-green);
 }
 
+/* form-section の調整 */
 .elements-actions-setting .form-section {
-    background-color: white; 
-    border: 1px solid #e0e0e0; 
-    border-radius: 10px; /* 角を丸く */
-    margin: 20px auto; 
-    padding: 20px; /* 内側余白 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* 軽い影 */
+    background-color: white;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 15px; /* 内側のpaddingを小さく */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
-    gap: 15px; 
-    width: 70%;
+    gap: 15px;
+    width: 60%; 
+    box-sizing: border-box; /* padding含めて幅調整 */
+    /* Animation */
+    position: relative;
+    border-left: 3px solid transparent; /* 初期状態のボーダー */
+    transition: border-left 0.3s ease, box-shadow 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* 表示時の状態 */
+.form-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* セクションタイトル */
@@ -589,12 +606,32 @@ ul li::before {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--black);
+    position: relative;
+    padding-left: 1.8em;
+    line-height: 1.4
 }
+
+.elements-actions-setting .form-section-title:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";/*アイコンのユニコード*/
+    font-weight: 900;
+    position: absolute;/*絶対位置*/
+    font-size: 1.4em;/*サイズ*/
+    left: 0;/*アイコンの位置*/
+    top: -0.2em;/*アイコンの位置*/
+    color: var(--green);
+
+}
+
+.elements-actions-setting .form-group {
+    flex-grow: 3;
+}
+
 
 /* 入力フィールドとテキストエリア */
 .elements-actions-setting .form-group input[type="text"],
 .elements-actions-setting .form-group textarea {
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--gray);
     border-top:none;
     border-right: none;
     border-left: none;
@@ -604,6 +641,7 @@ ul li::before {
 .elements-actions-setting .form-group input[type="text"] {
     font-size: 1rem;
     padding: 8px 10px;
+    line-height: 30px;
 }
 
 
@@ -612,8 +650,11 @@ ul li::before {
 .elements-actions-setting .form-group textarea {
     height: 30px; /* 1行の高さ */
     resize: none; /* リサイズ禁止 */
-    overflow: hidden; /* スクロールバーを非表示 */
-    font: 0.7rem;
+    font: 0.6rem;
+    line-height: 30px;
+    width: 100%; 
+    padding: 0 10px;
+    box-sizing: border-box; 
 }
 
 /* 入力フォーカス時 */
@@ -622,6 +663,11 @@ ul li::before {
     border-color: var(--orange);
     box-shadow: 0 0 5px rgba(236, 155, 77, 0.3);
     outline: none;
+}
+
+.elements-actions-setting .form-section:focus-within {
+    border-left: 5px solid var(--orange); /* フォーカス時に太くオレンジ色に */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
 }
 
 

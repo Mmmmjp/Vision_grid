@@ -35,6 +35,7 @@
                 <section>
                     <h3 class="intro-title">マンダラチャートとは？</h3>
                     <p>マンダラチャートとは、目標やアイデアを整理し、具体的な行動計画を立てるためのツールです。中心に大きな目標を置き、その周りに関連する8つの要素を配置します。さらにそれぞれの要素を細分化して具体的なタスクに落とし込むことで、目標達成に必要な手順を視覚的に整理できます。この方法は、全体像を把握しつつ細かい部分まで具体的に考えられる点が特徴です。</p>
+                    <img src="${pageContext.request.contextPath}/images/grid-sheet-sample.png" alt="目標シートサンプル画像" class="mandala-img">
                 </section> 
 
                 <section>

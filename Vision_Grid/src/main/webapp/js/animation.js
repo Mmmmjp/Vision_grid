@@ -52,3 +52,24 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// マンダラ要素、アクション入力時のフォームセクション表示
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".form-section");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.2 } 
+    );
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+});

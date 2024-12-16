@@ -44,10 +44,7 @@
                     <input type="submit" value="この内容で登録する" class="cta-btn">
                 </form>
             </div>
-                
-            
-            </div>
-            
+                 
             <a href="RegisterServlet" class="orange-btn">登録画面へ戻る</a>
         </main>
 
