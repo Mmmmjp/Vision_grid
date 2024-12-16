@@ -2,14 +2,14 @@
 
 【目次】
 - [アプリケーションについて](https://github.com/Mmmmjp/Vision_grid?tab=readme-ov-file#%E6%A6%82%E8%A6%81)
-- [ターゲットユーザー]()
-- [アプリケーションの作成動機]
-- [アプリケーションの機能]
-- [使用技術]
-- [アプリケーション開発を通しての学習目標]
-- [レポジトリクローンに関して]
-- [データベースに関して]
-- [ディレクトリ構図]
+- [ターゲットユーザー](https://github.com/Mmmmjp/Vision_grid#%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
+- [アプリケーションの作成動機](https://github.com/Mmmmjp/Vision_grid#%E3%81%AA%E3%81%9Cvisiongrid%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%AE%E3%81%8B%E4%BD%9C%E6%88%90%E5%8B%95%E6%A9%9F)
+- [アプリケーションの機能](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD)
+- [アプリケーション開発を通しての学習目標](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%92%E9%80%9A%E3%81%97%E3%81%A6%E3%81%AE%E5%AD%A6%E7%BF%92%E7%9B%AE%E6%A8%99)
+- [使用技術](https://github.com/Mmmmjp/Vision_grid#%E4%BD%BF%E7%94%A8%E6%8A%80%E8%A1%93)
+- [レポジトリクローンに関して](https://github.com/Mmmmjp/Vision_grid#clone)
+- [データベースに関して](https://github.com/Mmmmjp/Vision_grid#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9)
+- [ディレクトリ構図](https://github.com/Mmmmjp/Vision_grid#directory-tree)
 
 --- 
 ## アプリケーションについて
@@ -103,8 +103,8 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 ## 使用技術
 - **フロントエンド**: HTML, CSS, JavaScript
 - **バックエンド**: Java
-- **データベース**: SQL (H2 Database)
-- **ツール**: Eclipse, VS Code, Figma, Google Spreadsheets
+- **データベース**: H2 Database
+- **開発ツール**: Eclipse, Visual Studio Code
 
 ---
 
@@ -121,7 +121,9 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 ```
 ~\Documents\database
 ```
-
+> [!NOTE]
+> User Name: sa
+> Password: 
 ---
 
 ## Directory Tree
