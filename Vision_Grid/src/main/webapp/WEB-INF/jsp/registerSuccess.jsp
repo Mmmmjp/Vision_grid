@@ -22,25 +22,27 @@
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-	<main class="register-main">
-	    
-        <h2 class="page-title">WELCOME!!</h2>
-	    
-        <div class="register-form">
-            <p>さっそくログインしてみよう！</p>
+        <main class="register-main">
             
-            <a href="LoginServlet" class="cta-btn cta-btn-atag">ログイン画面へ</a>
-        </div>
+            <h2 class="page-title">WELCOME!!</h2>
+            
+            <div class="register-form">
+                <p>さっそくログインしてみよう！</p>
+                
+                <a href="LoginServlet" class="cta-btn cta-btn-atag">ログイン画面へ</a>
+            </div>
 
-        <div class="orange-btn-container">
-    	    <a href="index.jsp" class="orange-btn">TOP画面に戻る</a>
-        </div>  
-	</main>
+            <div class="orange-btn-container">
+                <a href="index.jsp" class="orange-btn">TOP画面に戻る</a>
+            </div>  
+        </main>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

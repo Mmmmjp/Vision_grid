@@ -22,32 +22,35 @@
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-    <main>
-        <h2>VISION SETTING</h2>
-        <p>目標の設定！</p>
-        <img src="${pageContext.request.contextPath}/images/mandala_sheet.png" alt="目標シート画像1" style="max-width: 100%; height: auto;">
+        <main>
+            <h2 class="page-title">VISIONの設定</h2>
+            
+            <img src="${pageContext.request.contextPath}/images/gridsheet_sample/mandala_vision.png" alt="目標シート画像1" class="mandala-img">
 
-        <form action="MandalaVisionServlet" method="post">
-            <div>
-                <label for="vision">目標:</label>
-                <input type="text" id="vision" name="vision" placeholder="目標を入力" required>
+            <form action="MandalaVisionServlet" method="post" class="mandala-form vision-setting">
+                <div>
+                    <label for="vision">目標:</label>
+                    <input type="text" id="vision" name="vision" placeholder="目標を入力" required>
+                </div>
+                <div>
+                    <label for="text">詳細:</label>
+                    <textarea id="text" name="text" placeholder="詳細を入力"></textarea>
+                </div>
+                <div>
+                    <input type="submit"  value="保存して次へ進む" class="cta-btn">
+                </div>
+            </form>
+            <div class="orange-btn-container">
+                <a href="MandalaIntroServlet" class="orange-btn">前のページへ戻る</a>
             </div>
-            <div>
-                <label for="text">詳細:</label>
-                <textarea id="text" name="text" placeholder="詳細を入力"></textarea>
-            </div>
-            <div>
-                <button type="submit">保存して次へ進む</button>
-            </div>
-        </form>
+        </main>
 
-        <a href="MandalaIntroServlet">前のページへ戻る</a>
-    </main>
-
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

@@ -19,44 +19,55 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+    <!-- js -->
+    <script src="${pageContext.request.contextPath}/js/animation.js" defer></script>
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-    <main>
-        <h2>ELEMENTS SETTING</h2>
-        <p><c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 に対する要素</p>
-        <img src="${pageContext.request.contextPath}/images/mandala_sheet.png" alt="目標シート画像" style="max-width: 100%; height: auto;">
-
-        <!-- エラーメッセージが設定されている場合に表示 -->
-		<c:if test="${not empty errorMessage}">
-		    <div class="error-message" style="color: red; font-weight: bold;">
-		        ${errorMessage}
-		    </div>
-		</c:if>
-		
-        <form action="${pageContext.request.contextPath}/MandalaElementsServlet" method="post">
-            <!-- 要素1〜8の入力欄 -->
-            <c:forEach var="i" begin="1" end="8">
-                <div style="margin-bottom: 20px;">
-                    <label for="e${i}Key">要素${i}:</label>
-                    <input type="text" id="e${i}Key" name="e${i}Key" placeholder="要素${i}を入力" required>
-                </div>
-                <div style="margin-bottom: 20px;">
-                    <label for="e${i}Text">要素${i}詳細:</label>
-                    <textarea id="e${i}Text" name="e${i}Text" placeholder="要素${i}の詳細を入力" ></textarea>
-                </div>
-            </c:forEach>
+        <main>
+            <h2 class="page-title">ELEMENTS SETTING</h2>
+            <a href="LogoutServlet" class="skip-btn mandala-logout">LOGOUT</a>
             
-            <div>
-                <button type="submit">保存して次へ進む</button>
-            </div>
-        </form>
-    </main>
+            <p class="align-center"><c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 に対する要素</p>
+            <img src="${pageContext.request.contextPath}/images/gridsheet_sample/mandala_elements.png" alt="目標シートサンプル画像(E)" class="mandala-img">
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+            <!-- エラーメッセージが設定されている場合に表示 -->
+            <c:if test="${not empty errorMessage}">
+                <div class="error-message" style="color: red; font-weight: bold;">
+                    ${errorMessage}
+                </div>
+            </c:if>
+            
+            <div class="elements-actions-setting mandala-form">
+                <form action="${pageContext.request.contextPath}/MandalaElementsServlet" method="post">
+                    <!-- 要素1〜8の入力欄 -->
+                    <c:forEach var="i" begin="1" end="8">
+                        <div class="form-section">
+                            <p class="form-section-title">要素${i}</p>
+                            <div>
+                                <div class="form-group">
+                                    <input type="text" id="e${i}Key" name="e${i}Key" placeholder="要素${i}を入力" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="e${i}Text" name="e${i}Text" placeholder="要素${i}の詳細を入力" ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </c:forEach>
+                    
+                    <div class="align-center">
+                        <input type="submit"  value="保存して次へ進む" class="cta-btn">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

@@ -19,22 +19,26 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+    <!-- js -->
+    <script src="${pageContext.request.contextPath}/js/animation.js" defer></script>
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-	<main>
-		<h2>MANDARA - COMPLETED</h2>
-         <p><c:out value="${loggedInUser.userName}" />さんの目標達成シート作成が完了しました</p>
-         
-         <p>早速、MyPageより確認してみてください♪</p>
-         <a href="MyPageServlet">My pageへ</a>
-    	
-	</main>
+        <main>
+            <h2>MANDARA - COMPLETED</h2>
+            <p><c:out value="${loggedInUser.userName}" />さんの目標達成シート作成が完了しました</p>
+            
+            <p>早速、MyPageより確認してみてください♪</p>
+            <a href="MyPageServlet">My pageへ</a>
+            
+        </main>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

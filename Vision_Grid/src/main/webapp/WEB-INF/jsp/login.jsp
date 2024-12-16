@@ -22,45 +22,47 @@
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-    <main>
-        <h2 class="page-title">ログインページ</h2>
-        
-        <div class="align-center">
-            <c:if test="${not empty errorMsg}">
-                <p style="color: red;">${errorMsg}</p>
-            </c:if>
+        <main>
+            <h2 class="page-title">ログインページ</h2>
             
-            <c:if test="${not empty logoutMessage}">
-                <p class="logout-message">${logoutMessage}</p>
-            </c:if>
-        </div>  
+            <div class="align-center">
+                <c:if test="${not empty errorMsg}">
+                    <p style="color: red;">${errorMsg}</p>
+                </c:if>
+                
+                <c:if test="${not empty logoutMessage}">
+                    <p class="logout-message">${logoutMessage}</p>
+                </c:if>
+            </div>  
 
-        <form action="LoginServlet" method="post" class="call-to-action login-form">
-            <div class="form-group">
-                <label for="userName">ユーザネーム:</label>
-                <input type="text" id="userName" name="userName" placeholder="Your username" required>
-            </div>
-                            
-            <div class="form-group">
-                <label for="password">パスワード:</label>
-                <input type="password" id="password" name="password" placeholder="Your password" required>
-            </div>
-            
-            <!-- Submit Button -->
-            <div class="form-buttons">
-                <input type="submit" value="ログイン" class="cta-btn">
-            </div>
-        </form>
+            <form action="LoginServlet" method="post" class="call-to-action login-form">
+                <div class="form-group">
+                    <label for="userName">ユーザネーム:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your username" required>
+                </div>
+                                
+                <div class="form-group">
+                    <label for="password">パスワード:</label>
+                    <input type="password" id="password" name="password" placeholder="Your password" required>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="form-buttons">
+                    <input type="submit" value="ログイン" class="cta-btn">
+                </div>
+            </form>
 
-        <div class="orange-btn-container">
-            <a href="index.jsp" class="orange-btn" class="">TOP画面に戻る</a>
-        </div>
-    </main>
+            <div class="orange-btn-container">
+                <a href="index.jsp" class="orange-btn" class="">TOP画面に戻る</a>
+            </div>
+        </main>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

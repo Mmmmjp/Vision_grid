@@ -23,11 +23,18 @@ html, body {
     font-size: 100%;
 }
 
-main {
-    margin: 120px auto 100px; /* ヘッダーを避けるためのマージン */
-    padding: 20px;
-    max-width: 2000px;
+.wrapper {
+    min-height: 100vh; /* ビューポートの高さに合わせる */
+    display: block; /* BlockのままでOK */
+    position: relative; /* フッターを相対位置で配置 */
+}
+
+main { 
+    margin: 120px auto 0; 
+    padding: 20px 20px 80px 20px;
+    max-width: none; /* max-widthを解除 */
     line-height: 1.7;
+    box-sizing: border-box; /* paddingの影響を受けないように */
 }
 
 
@@ -80,7 +87,7 @@ header h1 {
 /* フッター ================================================= */
 footer {
     background-color: var(--dark-orange);
-    /* position: fixed; */
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -322,11 +329,14 @@ ul li::before {
     padding: 30px 20px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto; /* 中央揃え */
     font-size: 1rem;
     line-height: 1.6;
     color: var(--black);
+    flex: 0 0 auto; /* 拡大・縮小しない */
+    display: block; /* フォーム要素がflexの影響を受けないように */
 }
 
 .register-form .form-title {
@@ -486,6 +496,144 @@ ul li::before {
     font-weight: bold;
     font-size: 1.4rem; 
 }
+
+/* mandala creation page ======================= */
+
+/* 画像の中央寄せとサイズ調整 */
+.mandala-img {
+    display: block; 
+    margin: 20px auto; 
+    width: 50%; 
+    max-width: 600px; 
+    border: 4px solid var(--light-orange); 
+    border-radius: 10px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; /* ホバー時のアニメーション */
+}
+
+/* 画像のホバー効果 */
+.mandala-img:hover {
+    transform: scale(1.05); /* 少し拡大 */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* ホバー時の影を強調 */
+}
+
+
+/* form */
+/* 共通 */
+.mandala-form {
+    padding: 30px 20px; 
+    margin: 20px auto; 
+    text-align: center; 
+}
+
+/* vision */
+.vision-setting {
+    max-width: 600px;
+    background-color: var(--light-orange); 
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+
+}
+
+/* ラベルのスタイル */
+.vision-setting label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.vision-setting input[type="text"],
+.vision-setting textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.vision-setting input[type="text"]:focus,
+.vision-setting textarea:focus {
+    border-color: var(--orange); 
+    box-shadow: 0 0 8px rgba(236, 155, 77, 0.3); 
+    outline: none;
+}
+
+
+
+/* elements and actions */
+
+.elements-actions-setting {
+    max-width: 80%;
+    background-color: var(--light-green);
+}
+
+.elements-actions-setting .form-section {
+    background-color: white; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 10px; /* 角を丸く */
+    margin: 20px auto; 
+    padding: 20px; /* 内側余白 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* 軽い影 */
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    width: 70%;
+}
+
+/* セクションタイトル */
+.elements-actions-setting .form-section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* 入力フィールドとテキストエリア */
+.elements-actions-setting .form-group input[type="text"],
+.elements-actions-setting .form-group textarea {
+    border-bottom: 1px solid var(--black);
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    transition: border-color 0.3s ease;
+}
+
+.elements-actions-setting .form-group input[type="text"] {
+    font-size: 1rem;
+    padding: 8px 10px;
+}
+
+
+
+/* テキストエリアを1行に */
+.elements-actions-setting .form-group textarea {
+    height: 30px; /* 1行の高さ */
+    resize: none; /* リサイズ禁止 */
+    overflow: hidden; /* スクロールバーを非表示 */
+    font: 0.7rem;
+}
+
+/* 入力フォーカス時 */
+.elements-actions-setting .form-group input[type="text"]:focus,
+.elements-actions-setting .form-group textarea:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 5px rgba(236, 155, 77, 0.3);
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

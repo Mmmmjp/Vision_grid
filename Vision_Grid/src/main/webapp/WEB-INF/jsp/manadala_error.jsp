@@ -20,16 +20,18 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 </head>
-<!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+    <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-    <main>
-        <h2>ERROR</h2>
-        <p>予期せぬエラーが発生しました</p>
+        <main>
+            <h2>ERROR</h2>
+            <p>予期せぬエラーが発生しました</p>
 
-    </main>
+        </main>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+    </div>
 </body>
 </html>

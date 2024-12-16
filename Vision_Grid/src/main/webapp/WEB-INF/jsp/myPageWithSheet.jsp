@@ -22,23 +22,25 @@
 </head>
 
 <body>
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+    <div class="wrapper">
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-	<main>
+        <main>
 
-        <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんの目標:【<c:out value="${vision.visionKey}" />】</h2>
-        
+            <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんの目標:【<c:out value="${vision.visionKey}" />】</h2>
+            
 
-		<!-- GridSheetのインクルード -->
-        <jsp:include page="/WEB-INF/jsp/includes/gridSheet.jsp" />
-        
-        <div class="orange-btn-container">
-    	    <a href="LogoutServlet" class="orange-btn">ログアウト</a>
-        </div>
-	</main>
+            <!-- GridSheetのインクルード -->
+            <jsp:include page="/WEB-INF/jsp/includes/gridSheet.jsp" />
+            
+            <div class="orange-btn-container">
+                <a href="LogoutServlet" class="orange-btn">ログアウト</a>
+            </div>
+        </main>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" /> 
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" /> 
+    </div>
 </body>
 </html>
