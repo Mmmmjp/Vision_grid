@@ -25,8 +25,16 @@
         <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
         <main>
-            <h2>ERROR</h2>
-            <p>予期せぬエラーが発生しました</p>
+            <div class="call-to-action">
+                <h2 class="page-title">ERROR</h2>
+                <p>エラーが発生しました。<br>
+                一度マイページへ戻ってください。<br>
+                エラーが解消されない場合、<span class="marker-effect">お使いのブラウザのキャッシュをクリアする</span>か<span class="marker-effect">管理人にお知らせ</span>ください</p>
+            </div>
+
+            <div class="orange-btn-container">
+                <a href="MyPageServlet" class="orange-btn">MyPageへ戻る</a>
+            </div>
 
         </main>
 

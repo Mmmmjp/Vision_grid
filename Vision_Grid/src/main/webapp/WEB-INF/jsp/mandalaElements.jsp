@@ -33,14 +33,23 @@
             <h2 class="page-title">ELEMENTS SETTING</h2>
             <a href="LogoutServlet" class="skip-btn mandala-logout">LOGOUT</a>
             
+            <!-- progress bar  -->
+            <ol class="timeline">
+                <li class="prev">イントロ</li>
+                <li class="prev">目標</li>
+                <li class="current">要素</li>
+                <li>アクション E1~E8</li>
+                <li>シート作成完成</li>
+            </ol>
+
             <p class="align-center"><c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 に対する要素</p>
             <img src="${pageContext.request.contextPath}/images/gridsheet_sample/mandala_elements.png" alt="目標シートサンプル画像(E)" class="mandala-img">
 
             <!-- エラーメッセージが設定されている場合に表示 -->
             <c:if test="${not empty errorMessage}">
-                <div class="error-message" style="color: red; font-weight: bold;">
+                <p class="error-message align-center">
                     ${errorMessage}
-                </div>
+                </p>
             </c:if>
             
             <div class="elements-actions-setting mandala-form">

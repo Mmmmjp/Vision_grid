@@ -25,23 +25,24 @@
 
 <body>
     <div class="wrapper">
-    <!-- Headerのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
+        <!-- Headerのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
-	<main>
-    <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんおかえりなさい</h2>
-    
-    <div class="call-to-action">
-        <p class="strong-message inspiration-message">
-            <c:out value="${inspirationMessage}" />
-        </p>
-        
-        <a href="MyPageServlet" class="cta-btn cta-btn-atag">マイページへ</a>
+        <main>
+            <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんおかえりなさい</h2>
+            
+            <div class="call-to-action">
+                <p class="strong-message inspiration-message">
+                    <c:out value="${inspirationMessage}" />
+                </p>
+                
+                <a href="MyPageServlet" class="cta-btn cta-btn-atag">マイページへ</a>
+                
+            </div>
         </main>
-    </div>
 
-    <!-- フッターのインクルード -->
-    <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
+        <!-- フッターのインクルード -->
+        <jsp:include page="/WEB-INF/jsp/includes/footer.jsp" />
     </div>
 </body>
 </html>

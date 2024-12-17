@@ -16,6 +16,10 @@
 **VisionGrid**は、目標設定と達成をサポートするためのWebアプリケーションです。  
 Mandalaチャートを採用し、ユーザーが大きな目標を具体的な要素とタスクに分解し、それを管理・振り返りながら達成を目指す仕組みを提供します。
 
+【Mandalaチャートサンプル画像】
+![Sample image of Manadala sheet](https://github.com/Mmmmjp/Vision_grid/blob/main/images/grid-sheet-sample.png)
+
+
 ---
 ## ターゲットユーザー
 - 目標に向かって努力している方、新しいことを学んでいる方。

@@ -24,16 +24,38 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-text">マンダラチャート作成中...</div>
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+    <div class="wrapper loading-wrapper">
         <!-- Headerのインクルード -->
         <jsp:include page="/WEB-INF/jsp/includes/header.jsp" />
 
         <main>
-            <h2>MANDARA - COMPLETED</h2>
-            <p><c:out value="${loggedInUser.userName}" />さんの目標達成シート作成が完了しました</p>
-            
-            <p>早速、MyPageより確認してみてください♪</p>
-            <a href="MyPageServlet">My pageへ</a>
+            <h2 class="page-title">MANDARA - COMPLETED</h2>
+
+            <!-- progress bar  -->
+            <ol class="timeline">
+                <li class="prev">イントロ</li>
+                <li class="prev">目標</li>
+                <li class="prev">要素</li>
+                <li class="prev">アクション E1~E8</li>
+                <li class="current">シート作成完成</li>
+            </ol>
+
+            <div class="call-to-action">
+                <p class="strong-message"><span class="marker-effect"><c:out value="${loggedInUser.userName}" />さん</span>の目標シート作成が完了しました</p>
+                
+                <p>早速、マイページより確認してみてください♪</p>
+                <a href="MyPageServlet" class="cta-btn cta-btn-atag">MY PAGEへ</a>
+            </div>
             
         </main>
 
