@@ -73,3 +73,18 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 });
+
+// マンダラチャート作成完了ページへの遷移中ローディング
+document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+    const contentWrapper = document.querySelector(".loading-wrapper");
+
+    // Simulate a delay for loading effect
+    setTimeout(() => {
+        loadingScreen.style.opacity = 0; // Fade out animation
+        setTimeout(() => {
+            loadingScreen.style.display = "none"; // Hide loader completely
+            contentWrapper.style.display = "block"; // Show page content
+        }, 500); // Matches the CSS transition duration
+    }, 2000); // Simulated loading time (2 seconds)
+});

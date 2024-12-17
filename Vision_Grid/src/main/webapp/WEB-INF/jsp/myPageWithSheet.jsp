@@ -19,6 +19,9 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
+     <!-- js -->   
+    <script src="${pageContext.request.contextPath}/js/print.js" defer></script>
+
 </head>
 
 <body>
@@ -30,10 +33,16 @@
 
             <h2 class="page-title"><c:out value="${loggedInUser.userName}" />さんの目標:【<c:out value="${vision.visionKey}" />】</h2>
             
+            <!-- 印刷ボタン -->
+            <div class="print-btn-container">
+                <button id="print-btn" class="print-btn">シートを印刷</button>
+            </div>           
 
             <!-- GridSheetのインクルード -->
-            <jsp:include page="/WEB-INF/jsp/includes/gridSheet.jsp" />
-            
+            <div id="printArea">
+                <jsp:include page="/WEB-INF/jsp/includes/gridSheet.jsp" />
+            </div>
+
             <div class="orange-btn-container">
                 <a href="LogoutServlet" class="orange-btn">ログアウト</a>
             </div>

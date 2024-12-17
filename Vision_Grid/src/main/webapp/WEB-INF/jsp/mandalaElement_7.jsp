@@ -33,6 +33,15 @@
             <h2 class="page-title">E7 ACTIONS SETTING</h2>
             <a href="LogoutServlet" class="skip-btn mandala-logout">LOGOUT</a>
             
+            <!-- progress bar  -->
+            <ol class="timeline">
+                <li class="prev">イントロ</li>
+                <li class="prev">目標</li>
+                <li class="prev">要素</li>
+                <li class="current">アクション E1~E8</li>
+                <li>シート作成完成</li>
+            </ol>
+            
             <p class="align-center">
                 <c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 <br>
                 <span class="marker-effect">要素7: <c:out value="${elementKeysList[6]}" /> </span>に対してのアクション
@@ -42,9 +51,7 @@
     
             <!-- エラーメッセージが設定されている場合に表示 -->
             <c:if test="${not empty errorMessage}">
-                <div class="error-message" style="color: red; font-weight: bold;">
-                    ${errorMessage}
-                </div>
+                <p class="error-message align-center">${errorMessage}</p>
             </c:if>
 
             <div class="elements-actions-setting mandala-form">
@@ -53,11 +60,13 @@
                     <c:forEach var="letter" items="A,B,C,D,E,F,G,H">
                         <div class="form-section">
                             <p class="form-section-title">アクション${letter}</p>
-                            <div>
-                                <input type="text" id="e7${letter}Key" name="e7${letter}Key" placeholder="アクション${letter}を入力" required>
-                            </div>
-                            <div>
-                                <textarea id="e7${letter}Text" name="e7${letter}Text" placeholder="アクション${letter}の詳細を入力" ></textarea>
+                            <div class="form-group" >
+                                <div>
+                                    <input type="text" id="e7${letter}Key" name="e7${letter}Key" placeholder="アクション${letter}を入力" required>
+                                </div>
+                                <div>
+                                    <textarea id="e7${letter}Text" name="e7${letter}Text" placeholder="アクション${letter}の詳細を入力" ></textarea>
+                                </div>
                             </div>
                         </div>
                     </c:forEach>

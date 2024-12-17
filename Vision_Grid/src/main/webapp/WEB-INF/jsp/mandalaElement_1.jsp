@@ -33,6 +33,15 @@
             <h2 class="page-title">E1 ACTIONS SETTING</h2>
             <a href="LogoutServlet" class="skip-btn mandala-logout">LOGOUT</a>
             
+            <!-- progress bar  -->
+            <ol class="timeline">
+                <li class="prev">イントロ</li>
+                <li class="prev">目標</li>
+                <li class="prev">要素</li>
+                <li class="current">アクション E1~E8</li>
+                <li>シート作成完成</li>
+            </ol>
+
             <p class="align-center">
                 <c:out value="${loggedInUser.userName}" />さんの目標 【<c:out value="${vision.visionKey}" />】 <br>
                 <span class="marker-effect">要素1: <c:out value="${elementKeysList[0]}" /></span> に対してのアクション
@@ -42,9 +51,7 @@
 
             <!-- エラーメッセージが設定されている場合に表示 -->
             <c:if test="${not empty errorMessage}">
-                <div class="error-message" style="color: red; font-weight: bold;">
-                    ${errorMessage}
-                </div>
+                <p class="error-message align-center">${errorMessage}</p>
             </c:if>
             
             <div class="elements-actions-setting mandala-form">

@@ -28,7 +28,17 @@
 
         <main>
             <h2 class="page-title">VISIONの設定</h2>
-            
+            <a href="LogoutServlet" class="skip-btn mandala-logout">LOGOUT</a>
+
+            <!-- progress bar  -->
+            <ol class="timeline">
+                <li class="prev">イントロ</li>
+                <li class="current">目標</li>
+                <li>要素</li>
+                <li>アクション E1~E8</li>
+                <li>シート作成完成</li>
+            </ol>
+
             <img src="${pageContext.request.contextPath}/images/gridsheet_sample/mandala_vision.png" alt="目標シート画像1" class="mandala-img">
 
             <form action="MandalaVisionServlet" method="post" class="mandala-form form-vision">
