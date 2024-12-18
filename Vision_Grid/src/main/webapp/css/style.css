@@ -2,7 +2,7 @@
 
 /* 共通変数 ============================================== */
 :root {
-    --orange: #ec9b4d;
+    --orange: #f0913e;
     --dark-orange: #c86c36;
     --black: #3e3e3e;
     --gray: #cccccc;
@@ -555,7 +555,7 @@ ul li::before {
     overflow: hidden;
     background-color: var(--orange);  
     font-size: .9em; 
-    width: 60%; 
+    width: 80%; 
     margin: 1rem 0;
 }
 
