@@ -66,10 +66,11 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 - **ログイン認証、新規登録**  
    ユーザーごとのデータを保存し、どの端末からでもアクセス可能。
 
-![Preview](visionGrid_sample_newAccount.gif)
-
 - **目標達成シートの閲覧**
    ログイン後、マイページより作成したマンダラチャートをいつでも閲覧可能。
+
+【ログイン認証後のMYPAGEにてMandalaシート表示サンプル動画】
+  ![Preview](VisionGrid_sample_myPage.gif)
 
 
 ### 今後の追加予定機能
