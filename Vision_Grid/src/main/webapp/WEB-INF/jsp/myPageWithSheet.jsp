@@ -36,7 +36,15 @@
             <!-- 印刷ボタン -->
             <div class="print-btn-container">
                 <button id="print-btn" class="print-btn">シートを印刷</button>
-            </div>           
+            </div>    
+            
+            <!-- fLOATING NAV -->
+            <div class="floating-menu">
+                <a href="HubPostIntroServlet">📋 掲示板</a>
+                <a href="/日記">📖 日記</a>
+                <a href="/目標達成チャート">📊 チャート</a>
+                <a href="/アカウント設定">⚙️ 設定</a>
+            </div>
 
             <!-- GridSheetのインクルード -->
             <div id="printArea">

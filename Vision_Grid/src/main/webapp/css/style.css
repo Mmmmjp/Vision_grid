@@ -503,6 +503,33 @@ ul li::before {
 }
 
 
+/* フローティングメニュー */
+.floating-menu {
+    position: fixed;
+    right: 20px;
+    top: 40%; /* 位置はそのまま */
+    transform: translateY(-50%);
+    background: rgba(236, 155, 77, 0.5); /* オレンジ色をさらに透明に */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+}
+
+.floating-menu a:hover {
+    background: rgba(200, 108, 54, 0.6); /* ホバー時の背景もさらに透明に */
+    padding: 5px;
+    border-radius: 4px;
+}
+
 /* manadala イントロページ ================= */
 
 /* SKIP button */
