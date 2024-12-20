@@ -5,7 +5,7 @@
    </picture>
 </div>
 <!--    ![Vision Grid](https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header_logo.png) -->
-
+<!-- base64 flags are available at https://www.phoca.cz/cssflags/ -->
 <div align="center">
  <a href="https://github.com/Mmmmjp/Vision_grid/blob/main/README.md">
     <img height="20px" src="https://img.shields.io/badge/JA-flag.svg?color=555555&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPGNpcmNsZSBmaWxsPSIjYmUwMDI2IiBjeD0iNDUwIiBjeT0iMzAwIiByPSIxODAiLz4NCjwvc3ZnPg0K">
@@ -18,22 +18,22 @@
 # 📋🚀Vision Grid - 目標設定・達成サポートアプリケーション
 
 【目次】
-- 🌐[アプリケーションについて](https://github.com/Mmmmjp/Vision_grid?tab=readme-ov-file#%E6%A6%82%E8%A6%81)
-- 🎯[ターゲットユーザー](https://github.com/Mmmmjp/Vision_grid#%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
-- 💡[アプリケーションの作成動機](https://github.com/Mmmmjp/Vision_grid#%E3%81%AA%E3%81%9Cvisiongrid%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%AE%E3%81%8B%E4%BD%9C%E6%88%90%E5%8B%95%E6%A9%9F)
-- 🛠️[アプリケーションの機能](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD)
-- 🌱[アプリケーション開発を通しての学習目標](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%92%E9%80%9A%E3%81%97%E3%81%A6%E3%81%AE%E5%AD%A6%E7%BF%92%E7%9B%AE%E6%A8%99)
-- 💻[使用技術](https://github.com/Mmmmjp/Vision_grid#%E4%BD%BF%E7%94%A8%E6%8A%80%E8%A1%93)
-- 📂[レポジトリクローンに関して](https://github.com/Mmmmjp/Vision_grid#clone)
-- 🗄️[データベースに関して](https://github.com/Mmmmjp/Vision_grid#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9)
-- 🗂️[ディレクトリ構図](https://github.com/Mmmmjp/Vision_grid#directory-tree)
+- [🌐アプリケーションについて](https://github.com/Mmmmjp/Vision_grid?tab=readme-ov-file#%E6%A6%82%E8%A6%81)
+- [🎯ターゲットユーザー](https://github.com/Mmmmjp/Vision_grid#%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
+- [💡アプリケーションの作成動機](https://github.com/Mmmmjp/Vision_grid#%E3%81%AA%E3%81%9Cvisiongrid%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%AE%E3%81%8B%E4%BD%9C%E6%88%90%E5%8B%95%E6%A9%9F)
+- [🛠️アプリケーションの機能](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD)
+- [🌱アプリケーション開発を通しての学習目標](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%92%E9%80%9A%E3%81%97%E3%81%A6%E3%81%AE%E5%AD%A6%E7%BF%92%E7%9B%AE%E6%A8%99)
+- [💻使用技術](https://github.com/Mmmmjp/Vision_grid#%E4%BD%BF%E7%94%A8%E6%8A%80%E8%A1%93)
+- [📂レポジトリクローンに関して](https://github.com/Mmmmjp/Vision_grid#clone)
+- [🗄️データベースに関して](https://github.com/Mmmmjp/Vision_grid#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9)
+- [🗂️ディレクトリ構図](https://github.com/Mmmmjp/Vision_grid#directory-tree)
   
 --- 
 ## 🌐アプリケーションについて
 **VisionGrid**は、目標設定と達成をサポートするためのWebアプリケーションです。  
 Mandalaチャートを採用し、ユーザーが大きな目標を具体的な要素とタスクに分解し、それを管理・振り返りながら達成を目指す仕組みを提供します。
 
-【Mandalaチャートサンプル画像】
+▶【Mandalaチャートサンプル画像】
 ![Sample image of Manadala sheet](https://github.com/Mmmmjp/Vision_grid/blob/main/images/grid-sheet-sample.png)
 
 
@@ -50,23 +50,23 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 このアプリは、以下の課題を解決するために作成されました：
 
-#### 学びの目的の明確化
+#### ▶　学びの目的の明確化
 - 未経験からエンジニアを目指す中で、目標や進むべき方向が不明確になることがありました。
 - これがモチベーションの低下につながるため、目標設定や振り返りを手助けする仕組みが必要でした。
 
-#### 紙ベースのMandalaチャートの限界
+#### ▶　紙ベースのMandalaチャートの限界
 - 紙では進捗管理が難しい。
 - 修正や変更が手間で柔軟性に欠ける。
 - 記録を振り返るのが面倒。
 
 ### 💡 WEBアプリケーションによる解決策
 
-| 課題                           | 解決策                              |
-|--------------------------------|-------------------------------------|
-| **情報量を柔軟に管理**         | 補足情報を入力できる機能を追加し、紙のマス目の制限を克服。 |
-| **振り返りの効率化**           | 日記やレポート機能を導入し、過去の目標や進捗を簡単に確認可能。 |
-| **進捗管理の手軽さ**           | 編集可能なMandalaチャートを実装し、目標の更新をスムーズに。 |
-| **データの共有と安全性**       | ログイン機能を導入し、クラウドでデータを安全に管理・共有。 |
+| 課題                           | 解決策                              　　　　　　　　　　　　|
+|--------------------------------|----------------------------------------------------------|
+| **情報量を柔軟に管理**         | 補足情報を入力できる機能を追加し、紙のマス目の制限を克服。 -----|
+| **振り返りの効率化**           | 日記やレポート機能を導入し、過去の目標や進捗を簡単に確認可能。  |
+| **進捗管理の手軽さ**           | 編集可能なMandalaチャートを実装し、目標の更新をスムーズに。    |
+| **データの共有と安全性**       | ログイン機能を導入し、クラウドでデータを安全に管理・共有。      |
 ---
 
 ## 🛠️アプリケーション機能
@@ -76,18 +76,16 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 - **ログイン認証・新規登録**: データをクラウドで管理。
 - **目標達成シートの閲覧**: 作成したチャートをマイページで確認可能。
 
-| サンプル動画                   | 説明                               |
+| サンプル動画                   | 説明                                |
 |--------------------------------|------------------------------------|
 | ![Sample](VisionGrid_sample_myPage.gif) | ログイン後のマイページ表示         |
 | ![Sample](VisionGrid_sample_MandalaCreation.gif) | 新規アカウントでのチャート作成     |
 
 ### 今後の追加予定機能
 
-- 柔軟な編集機能  
+- 柔軟な編集機能
 - 振り返りツール（レポート機能）  
-- 進捗グラフ  
-- モチベーションアップ機能（バッジ・通知）  
-- リマインダー機能  
+- 進捗グラフ    
 
 ---
 
