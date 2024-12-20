@@ -2,7 +2,7 @@ package model;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class PostMutterBeans implements Serializable {
@@ -12,6 +12,7 @@ public class PostMutterBeans implements Serializable {
     private Timestamp postDate; // 投稿日時
     private String postText;  // 投稿内容
     private String userName;  // ユーザー名
+    private int likeCount; // 追加: いいね数
 
     // デフォルトコンストラクタ
     public PostMutterBeans() {}
@@ -80,12 +81,17 @@ public class PostMutterBeans implements Serializable {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+    
+    public int getLikeCount() { return likeCount; } 
+    public void setLikeCount(int likeCount) { this.likeCount = likeCount; } 
 
- // 日付のみを返すカスタムメソッド
+ // 日付と時間（何時何分）を返すカスタムメソッド
     public String getFormattedPostDate() {
         if (postDate != null) {
-            LocalDate localDate = postDate.toLocalDateTime().toLocalDate();
-            return localDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+            // Timestamp を LocalDateTime に変換
+            LocalDateTime localDateTime = postDate.toLocalDateTime();
+            // フォーマット: yyyy-MM-dd HH:mm
+            return localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
         }
         return null; // 日付がnullの場合
     }
