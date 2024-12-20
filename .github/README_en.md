@@ -77,8 +77,8 @@ This application was created to address the following challenges:
 
 | Sample Video                   | Description                                |
 |--------------------------------|------------------------------------|
-| ![Sample](VisionGrid_sample_myPage.gif) | Displays personal page after login.         |
-| ![Sample](VisionGrid_sample_MandalaCreation.gif) | Demonstrates creating a chart with a new account.     |
+| ![Sample](https://github.com/Mmmmjp/Vision_grid/blob/main/sample_videos/VisionGrid_sample_myPage.gif) | Displays personal page after login.         |
+| ![Sample](https://github.com/Mmmmjp/Vision_grid/blob/main/sample_videos/VisionGrid_sample_MandalaCreation.gif) | Demonstrates creating a chart with a new account.     |
 
 ### Planned Features
 

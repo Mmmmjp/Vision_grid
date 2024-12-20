@@ -78,8 +78,8 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 | サンプル動画                   | 説明                                |
 |--------------------------------|------------------------------------|
-| ![Sample](VisionGrid_sample_myPage.gif) | ログイン後のマイページ表示         |
-| ![Sample](VisionGrid_sample_MandalaCreation.gif) | 新規アカウントでのチャート作成     |
+| ![Sample](sample_videos/VisionGrid_sample_myPage.gif) | ログイン後のマイページ表示         |
+| ![Sample](sample_videos/VisionGrid_sample_MandalaCreation.gif) | 新規アカウントでのチャート作成     |
 
 ### 今後の追加予定機能
 
