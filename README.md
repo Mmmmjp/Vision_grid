@@ -1,16 +1,19 @@
 <div align="center">
    <picture>
-      <source height="125" media="(prefers-color-scheme: dark)" srcset="https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header_logo.png">
-      <img height="125" alt="VisionGrid" src="https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header_logo.png">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header_logo.png">
+      <img alt="VisionGrid" src="https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header_logo.png">
    </picture>
+</div>
 <!--    ![Vision Grid](https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header_logo.png) -->
 
+<div align="center">
  <a href="https://github.com/Mmmmjp/Vision_grid/blob/main/README.md">
     <img height="20px" src="https://img.shields.io/badge/JA-flag.svg?color=555555&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPGNpcmNsZSBmaWxsPSIjYmUwMDI2IiBjeD0iNDUwIiBjeT0iMzAwIiByPSIxODAiLz4NCjwvc3ZnPg0K">
 
  <a href="https://github.com/Mmmmjp/Vision_grid/blob/main/.github/README_en.md">
     <img height="20px" src="https://img.shields.io/badge/UK-flag.svg?color=555555&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjAgMzAiIGhlaWdodD0iNjAwIj4NCjxkZWZzPg0KPGNsaXBQYXRoIGlkPSJ0Ij4NCjxwYXRoIGQ9Im0zMCwxNWgzMHYxNXp2MTVoLTMwemgtMzB2LTE1enYtMTVoMzB6Ii8+DQo8L2NsaXBQYXRoPg0KPC9kZWZzPg0KPHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0ibTAsMHYzMGg2MHYtMzB6Ii8+DQo8cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIgZD0ibTAsMGw2MCwzMG0wLTMwbC02MCwzMCIvPg0KPHBhdGggc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjQiIGQ9Im0wLDBsNjAsMzBtMC0zMGwtNjAsMzAiIGNsaXAtcGF0aD0idXJsKCN0KSIvPg0KPHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjxwYXRoIHN0cm9rZT0iI2NmMTQyYiIgc3Ryb2tlLXdpZHRoPSI2IiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjwvc3ZnPg0K">
 </a>
+</div>
 
 # Vision Grid - 目標設定・達成サポートアプリケーション
 
@@ -24,8 +27,7 @@
 - [レポジトリクローンに関して](https://github.com/Mmmmjp/Vision_grid#clone)
 - [データベースに関して](https://github.com/Mmmmjp/Vision_grid#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9)
 - [ディレクトリ構図](https://github.com/Mmmmjp/Vision_grid#directory-tree)
-
-</div>
+  
 --- 
 ## アプリケーションについて
 **VisionGrid**は、目標設定と達成をサポートするためのWebアプリケーションです。  
