@@ -1,4 +1,4 @@
-![Vision Grid](https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header.png)
+![Vision Grid](https://github.com/Mmmmjp/Vision_grid/blob/main/images/readme_header_logo.png)
 
 【目次】
 - [アプリケーションについて](https://github.com/Mmmmjp/Vision_grid?tab=readme-ov-file#%E6%A6%82%E8%A6%81)
