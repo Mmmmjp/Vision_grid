@@ -11,25 +11,25 @@
     <img height="20px" src="https://img.shields.io/badge/JA-flag.svg?color=555555&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNmZmYiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPGNpcmNsZSBmaWxsPSIjYmUwMDI2IiBjeD0iNDUwIiBjeT0iMzAwIiByPSIxODAiLz4NCjwvc3ZnPg0K">
 
  <a href="https://github.com/Mmmmjp/Vision_grid/blob/main/.github/README_en.md">
-    <img height="20px" src="https://img.shields.io/badge/UK-flag.svg?color=555555&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjAgMzAiIGhlaWdodD0iNjAwIj4NCjxkZWZzPg0KPGNsaXBQYXRoIGlkPSJ0Ij4NCjxwYXRoIGQ9Im0zMCwxNWgzMHYxNXp2MTVoLTMwemgtMzB2LTE1enYtMTVoMzB6Ii8+DQo8L2NsaXBQYXRoPg0KPC9kZWZzPg0KPHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0ibTAsMHYzMGg2MHYtMzB6Ii8+DQo8cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIgZD0ibTAsMGw2MCwzMG0wLTMwbC02MCwzMCIvPg0KPHBhdGggc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjQiIGQ9Im0wLDBsNjAsMzBtMC0zMGwtNjAsMzAiIGNsaXAtcGF0aD0idXJsKCN0KSIvPg0KPHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjxwYXRoIHN0cm9rZT0iI2NmMTQyYiIgc3Ryb2tlLXdpZHRoPSI2IiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjwvc3ZnPg0K">
+    <img height="20px" src="https://img.shields.io/badge/EN-flag.svg?color=555555&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjAgMzAiIGhlaWdodD0iNjAwIj4NCjxkZWZzPg0KPGNsaXBQYXRoIGlkPSJ0Ij4NCjxwYXRoIGQ9Im0zMCwxNWgzMHYxNXp2MTVoLTMwemgtMzB2LTE1enYtMTVoMzB6Ii8+DQo8L2NsaXBQYXRoPg0KPC9kZWZzPg0KPHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0ibTAsMHYzMGg2MHYtMzB6Ii8+DQo8cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNiIgZD0ibTAsMGw2MCwzMG0wLTMwbC02MCwzMCIvPg0KPHBhdGggc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjQiIGQ9Im0wLDBsNjAsMzBtMC0zMGwtNjAsMzAiIGNsaXAtcGF0aD0idXJsKCN0KSIvPg0KPHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjEwIiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjxwYXRoIHN0cm9rZT0iI2NmMTQyYiIgc3Ryb2tlLXdpZHRoPSI2IiBkPSJtMzAsMHYzMG0tMzAtMTVoNjAiLz4NCjwvc3ZnPg0K">
 </a>
 </div>
 
-# Vision Grid - 目標設定・達成サポートアプリケーション
+# 📋🚀Vision Grid - 目標設定・達成サポートアプリケーション
 
 【目次】
-- [アプリケーションについて](https://github.com/Mmmmjp/Vision_grid?tab=readme-ov-file#%E6%A6%82%E8%A6%81)
-- [ターゲットユーザー](https://github.com/Mmmmjp/Vision_grid#%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
-- [アプリケーションの作成動機](https://github.com/Mmmmjp/Vision_grid#%E3%81%AA%E3%81%9Cvisiongrid%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%AE%E3%81%8B%E4%BD%9C%E6%88%90%E5%8B%95%E6%A9%9F)
-- [アプリケーションの機能](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD)
-- [アプリケーション開発を通しての学習目標](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%92%E9%80%9A%E3%81%97%E3%81%A6%E3%81%AE%E5%AD%A6%E7%BF%92%E7%9B%AE%E6%A8%99)
-- [使用技術](https://github.com/Mmmmjp/Vision_grid#%E4%BD%BF%E7%94%A8%E6%8A%80%E8%A1%93)
-- [レポジトリクローンに関して](https://github.com/Mmmmjp/Vision_grid#clone)
-- [データベースに関して](https://github.com/Mmmmjp/Vision_grid#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9)
-- [ディレクトリ構図](https://github.com/Mmmmjp/Vision_grid#directory-tree)
+- 🌐[アプリケーションについて](https://github.com/Mmmmjp/Vision_grid?tab=readme-ov-file#%E6%A6%82%E8%A6%81)
+- 🎯[ターゲットユーザー](https://github.com/Mmmmjp/Vision_grid#%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
+- 💡[アプリケーションの作成動機](https://github.com/Mmmmjp/Vision_grid#%E3%81%AA%E3%81%9Cvisiongrid%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E3%81%AE%E3%81%8B%E4%BD%9C%E6%88%90%E5%8B%95%E6%A9%9F)
+- 🛠️[アプリケーションの機能](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD)
+- 🌱[アプリケーション開発を通しての学習目標](https://github.com/Mmmmjp/Vision_grid#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%96%8B%E7%99%BA%E3%82%92%E9%80%9A%E3%81%97%E3%81%A6%E3%81%AE%E5%AD%A6%E7%BF%92%E7%9B%AE%E6%A8%99)
+- 💻[使用技術](https://github.com/Mmmmjp/Vision_grid#%E4%BD%BF%E7%94%A8%E6%8A%80%E8%A1%93)
+- 📂[レポジトリクローンに関して](https://github.com/Mmmmjp/Vision_grid#clone)
+- 🗄️[データベースに関して](https://github.com/Mmmmjp/Vision_grid#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9)
+- 🗂️[ディレクトリ構図](https://github.com/Mmmmjp/Vision_grid#directory-tree)
   
 --- 
-## アプリケーションについて
+## 🌐アプリケーションについて
 **VisionGrid**は、目標設定と達成をサポートするためのWebアプリケーションです。  
 Mandalaチャートを採用し、ユーザーが大きな目標を具体的な要素とタスクに分解し、それを管理・振り返りながら達成を目指す仕組みを提供します。
 
@@ -38,13 +38,13 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 
 ---
-## ターゲットユーザー
+## 🎯ターゲットユーザー
 - 目標に向かって努力している方、新しいことを学んでいる方。
 - 就職活動やキャリアの転換期にあり、自分自身と向き合う必要がある方。
 
 ---
 
-## なぜVisionGridを作成したのか？[作成動機]
+## 💡なぜVisionGridを作成したのか？[作成動機]
 
 ### 💬 解決したい課題
 
@@ -69,7 +69,7 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 | **データの共有と安全性**       | ログイン機能を導入し、クラウドでデータを安全に管理・共有。 |
 ---
 
-## アプリケーション機能
+## 🛠️アプリケーション機能
 
 ### コア機能
 - **Mandalaチャート作成**: 質問形式で目標・要素・タスクを設定。
@@ -91,7 +91,7 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 ---
 
-## アプリケーション開発を通しての学習目標
+## 🌱アプリケーション開発を通しての学習目標
 
 VisionGridの開発を通じて、以下のスキルを向上させました
 | スキル                         | 学習内容                           |
@@ -102,7 +102,7 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 
 ---
 
-## 使用技術
+## 💻使用技術
 | 分類         | 使用技術                     |
 |--------------|------------------------------|
 | フロントエンド | HTML, CSS, JavaScript        |
@@ -113,14 +113,14 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 
 ---
 
-## Clone 
+## 📂Clone 
    ```bash
    git clone https://github.com/your-username/VisionGrid.git
    ```
 
 ---
 
-## データベース
+## 🗄️データベース
 
 データベースファイルは、以下のディレクトリに保存してください：
 ```
@@ -131,7 +131,7 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 > **Password** : 
 ---
 
-## Directory Tree
+## 🗂️Directory Tree
 
 ### ログイン認証、新規登録機能実装までのディレクトリ構成
 ```
