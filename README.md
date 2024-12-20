@@ -128,7 +128,7 @@ VisionGridの開発を通じて、以下のスキルを向上させました
 > **User Name** : sa |
 > **Password** :
 
-データベースに関しての詳細は[こちら](https://github.com/Mmmmjp/Vision_grid/blob/main/db/README_db.md) 🔗
+<P>データベースに関しての詳細は[こちら](https://github.com/Mmmmjp/Vision_grid/blob/main/db/README_db.md) 📖 </P>
 ---
 
 ## 🗂️Directory Tree
