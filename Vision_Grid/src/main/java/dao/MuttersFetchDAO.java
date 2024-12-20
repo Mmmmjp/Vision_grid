@@ -13,38 +13,38 @@ import model.PostMutterBeans;
 public class MuttersFetchDAO extends BaseDAO {
 
     public List<PostMutterBeans> getAllMutters() {
-        // 戻り値のリスト
-        List<PostMutterBeans> muttersList = new ArrayList<>();
+        List<PostMutterBeans> mutterList = new ArrayList<>();
 
-        // 修正版SQLクエリ
-        String sql = "SELECT HUB_POSTS.POST_ID, HUB_POSTS.USER_ID, USERS.USERNAME, HUB_POSTS.POST_DATE, HUB_POSTS.POST_TEXT " +
+        // 修正済みSQL: 正しい列名に更新
+        String sql = "SELECT HUB_POSTS.POST_ID, HUB_POSTS.USER_ID, USERS.USERNAME, HUB_POSTS.POST_DATE, HUB_POSTS.POST_TEXT, " +
+                     "       (SELECT COUNT(*) FROM HUB_LIKES WHERE HUB_LIKES.MUTTER_ID = HUB_POSTS.POST_ID) AS LIKE_COUNT " +
                      "FROM HUB_POSTS " +
                      "INNER JOIN USERS ON HUB_POSTS.USER_ID = USERS.USER_ID " +
                      "ORDER BY HUB_POSTS.POST_DATE DESC";
 
-        try (Connection conn = getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql)) {
+        try (Connection con = getConnection();
+             PreparedStatement ps = con.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery()) {
 
-            // クエリを実行
-            ResultSet rs = ps.executeQuery();
-
-            // 結果をリストに格納
             while (rs.next()) {
                 int postId = rs.getInt("POST_ID");
                 int userId = rs.getInt("USER_ID");
-                String username = rs.getString("USERNAME");
+                String userName = rs.getString("USERNAME"); // 修正済み
                 Timestamp postDate = rs.getTimestamp("POST_DATE");
                 String postText = rs.getString("POST_TEXT");
+                int likeCount = rs.getInt("LIKE_COUNT");
 
-                // PostMutterBeansオブジェクトを作成し、リストに追加
-                PostMutterBeans mutter = new PostMutterBeans(postId, userId, username, postDate, postText);
-                muttersList.add(mutter);
+                // PostMutterBeans オブジェクトにデータを設定
+                PostMutterBeans mutter = new PostMutterBeans(postId, userId, userName, postDate, postText);
+                mutter.setLikeCount(likeCount);
+
+                mutterList.add(mutter);
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
-            return null;
         }
 
-        return muttersList;
+        return mutterList;
     }
 }

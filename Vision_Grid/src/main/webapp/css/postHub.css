@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/* 共通変数 ============================================== */
+:root {
+    --orange: #f0913e;
+    --dark-orange: #c86c36;
+    --black: #3e3e3e;
+    --gray: #cccccc;
+    --green: #76c53a;
+    --darker-green: #5ac463;
+    --light-green: #e9f7e9;
+    --light-orange: rgba(236, 155, 77, 0.2);
+    --light-gray: #f9f9f9;
+}
+
+/* ラッパーのスタイル */
+.post-wrapper {
+    background-color: var(--light-green); 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    max-width: 80%; /* 最大幅を設定 */
+}
+ 
+/* SUB button */
+
+.sub-button { 
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: white;
+    background-color: rgba(236, 155, 77, 0.5);
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+ 
+.sub-button:hover {
+    background-color: white; /* ホバー時に少し濃く */
+    color: var(--orange);
+    border: 1px solid rgba(236, 155, 77, 0.5);
+}
+
+/* 掲示板フォーム */ 
+.tweet-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem auto 2rem auto;
+    max-width: 600px;
+}
+
+.tweet-form input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: 1px solid var(--gray);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    background-color: var(--light-green);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    height: 45px; /* 高さ固定 */
+}
+
+.tweet-form input[type="text"]:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 5px var(--green);
+    outline: none;
+}
+
+.tweet-form input[type="submit"] {
+    background-color: var(--green);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    height: 45px; /* 高さを入力ボックスと揃える */
+    box-shadow: 0 4px 6px rgba(110, 119, 83, 0.4), 0 0 10px rgba(110, 119, 83, 0.6);
+    transition: all 0.3s ease;
+}
+
+.tweet-form input[type="submit"]:hover {
+    background-color: var(--darker-green);
+    box-shadow: 0 6px 8px rgba(110, 119, 83, 0.5), 0 0 15px rgba(110, 119, 83, 0.8);
+    transform: scale(1.05);
+}
+
+.tweet-form input[type="submit"]:active {
+    transform: scale(1); /* クリック時に元のサイズに戻す */
+    box-shadow: 0 3px 5px rgba(110, 119, 83, 0.4);
+}
+
+/* 掲示板つぶやき ========*/
+.tweet-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 15px auto;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(159, 140, 134, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 70%; /* 全体幅を調整 */ 
+}
+
+.post-title-section {
+    display: flex;
+    gap: 2rem;
+    border-bottom: dotted 1px var(--gray);
+}
+
+
+/* 投稿者名を囲むスタイル */
+.tweet-wrapper .userName {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--black);
+    padding: 0.2rem 2rem;
+    border: 1px solid var(--gray); 
+    border-radius: 5px;
+    background-color: var(--light-gray);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    text-align: center;
+    max-width: fit-content; 
+}  
+
+/* ホバー時の効果 */
+.tweet-wrapper .userName:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* アクティブ時の効果 (クリック時) */
+.tweet-wrapper .userName:active {
+    box-shadow: none;
+    transform: translateY(1px); 
+}
+  
+  
+
+.tweet-wrapper .post-date {
+    font-size: small;
+    align-content: end;
+    color: var(--gray);
+}
+
+.tweet-wrapper .tweet-text {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: var(--dark-brown);
+    line-height: 1.5;
+}
+
+.tweet-wrapper .tweet-divider {
+    margin-top: 10px;
+    border-top: 1px dashed rgba(159, 140, 134, 0.5);
+}
+
+/* いいねアクション===================== */
+.tweet-wrapper .tweet-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* いいね数のスタイル */
+.tweet-wrapper .tweet-actions span {
+    font-size: 0.9rem;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 応援ボタンのスタイル */
+.tweet-wrapper .tweet-actions .like-button {
+    background: linear-gradient(135deg, var(--green), var(--light-green));
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.tweet-wrapper .tweet-actions .likes {
+    width: 18px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* ホバー時の効果 */
+.tweet-wrapper .tweet-actions .like-button:hover {
+    background: linear-gradient(135deg, var(--darker-green), var(--green));
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 10px var(--green);
+    transform: scale(1.05);
+}
+
+/* アクティブ時の効果 */
+.tweet-wrapper .tweet-actions .like-button:active {
+    transform: scale(1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 無効化されたボタン */
+.tweet-wrapper .tweet-actions .like-button:disabled {
+    background: linear-gradient(135deg, var(--light-gray), var(--gray));
+    color: rgba(0, 0, 0, 0.5);
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* メガホンアイコンの回転アニメーション */
+.rotate {
+    animation: rotateEffect 0.6s ease-in-out;
+}
+
+@keyframes rotateEffect {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* いいね数の拡大縮小アニメーション */
+.highlight {
+    animation: highlightEffect 0.6s ease;
+}
+
+@keyframes highlightEffect {
+    0% {
+        transform: scale(1);
+        color: var(--green);
+    }
+    50% {
+        transform: scale(1.3);
+        color: var(--darker-green);
+    }
+    100% {
+        transform: scale(1);
+        color: var(--green);
+    }
+}
