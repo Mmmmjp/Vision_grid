@@ -45,9 +45,11 @@
                 </form>
             </div>
 
-            <c:if test="${not empty errorMsg}">
-                <p style="color: red;"><c:out value="${errorMsg}" /></p>
-            </c:if>
+            <div class="align-center">
+                <c:if test="${not empty errorMsg}">
+                    <p style="color: red;"><c:out value="${errorMsg}" /></p>
+                </c:if>
+            </div>
 
             <!-- ドロップダウンメニュー -->
 			 <div class="date-select-wrapper">

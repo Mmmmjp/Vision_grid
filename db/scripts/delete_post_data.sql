@@ -1,0 +1,6 @@
+-- 全てのつぶやきを削除
+DELETE FROM HUB_POSTS;
+
+-- POST_IDが1と2以外のデータを削除
+DELETE FROM HUB_POSTS
+WHERE POST_ID NOT IN (1, 2);
