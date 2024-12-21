@@ -71,15 +71,46 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 ## 🛠️アプリケーション機能
 
-### 現時点での実装機能
-| ページタイトル       | サンプル画像                                                                                               | 実装した機能                                                                                     |
-|----------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| ログイン画面         | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png"> <img alt="VisionGrid_loginpage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png" width="300"> </picture> | ユーザーネームとパスワードによる認証機能を実装                                                 |
-| ログイン成功画面     | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png"> <img alt="VisionGrid_loginsuccesspage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png" width="300"> </picture> | ログイン後にランダムでポジティブなメッセージを表示する機能を実装（現在10種類のメッセージを用意） |
-| 新規登録画面         | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registration-page.png"> <img alt="VisionGrid_registration-page" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registration-page.png" width="300"> </picture> | 新規アカウント登録機能を実装                                                                     |
-| MYページ             | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png"> <img alt="VisionGrid_mypage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png" width="300"> </picture> | マンダラシート形式でデータを表形式で表示する機能を実装（印刷可能）                               |
-| Mandalaチャート作成イントロページ | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mandala-creation-intropage.png"> <img alt="VisionGrid_mandala-creation-intropage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mandala-creation-intropage.png" width="300"> </picture> | Mandalaチャートを作成する機能を実装                                                           |
-| Vision HUBページ     | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png"> <img alt="VisionGrid_post-hubpage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png" width="300"> </picture> | ユーザー同士で目標達成を応援し合う掲示板機能を実装                                             |
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+
+  <div style="flex: 1; min-width: 45%;">
+    <h3>ログイン画面</h3>
+    <img src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png" alt="VisionGrid_loginpage" style="width: 100%; max-width: 300px;">
+    <p>ユーザーネームとパスワードによる認証機能を実装。</p>
+  </div>
+
+  <div style="flex: 1; min-width: 45%;">
+    <h3>ログイン成功画面</h3>
+    <img src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png" alt="VisionGrid_loginsuccesspage" style="width: 100%; max-width: 300px;">
+    <p>ログイン後にランダムでポジティブなメッセージを表示する機能を実装（現在10種類のメッセージを用意）。</p>
+  </div>
+
+  <div style="flex: 1; min-width: 45%;">
+    <h3>新規登録画面</h3>
+    <img src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registration-page.png" alt="VisionGrid_registration-page" style="width: 100%; max-width: 300px;">
+    <p>新規アカウント登録機能を実装。</p>
+  </div>
+
+  <div style="flex: 1; min-width: 45%;">
+    <h3>MYページ</h3>
+    <img src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png" alt="VisionGrid_mypage" style="width: 100%; max-width: 300px;">
+    <p>マンダラシート形式でデータを表形式で表示する機能を実装（印刷可能）。</p>
+  </div>
+
+  <div style="flex: 1; min-width: 45%;">
+    <h3>Mandalaチャート作成イントロページ</h3>
+    <img src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mandala-creation-intropage.png" alt="VisionGrid_mandala-creation-intropage" style="width: 100%; max-width: 300px;">
+    <p>Mandalaチャートを作成する機能を実装。</p>
+  </div>
+
+  <div style="flex: 1; min-width: 45%;">
+    <h3>Vision HUBページ</h3>
+    <img src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png" alt="VisionGrid_post-hubpage" style="width: 100%; max-width: 300px;">
+    <p>ユーザー同士で目標達成を応援し合う掲示板機能を実装。</p>
+  </div>
+
+</div>
+
 
 | サンプル動画                   | 説明                                |
 |--------------------------------|------------------------------------|
