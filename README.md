@@ -74,17 +74,17 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 ## 機能一覧
 | ログイン画面 |　ログイン成功画面 |
 | ---- | ---- |
-| ![ログイン画面]("https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png") | ![ログイン成功画面]("https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png") |
+| ![ログイン画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png) | ![ログイン成功画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png) |
 | ユーザーネームとパスワードによる認証機能を実装。 | ログイン後にランダムでポジティブなメッセージを表示する機能を実装（現在10種類のメッセージを用意）。 |
 
 | 新規登録画面 |　MYページ画面 |
 | ---- | ---- |
-| ![新規登録画面]("https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registeration-page.png") | ![MYページ画面]("https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png") |
+| ![新規登録画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registeration-page.png) | ![MYページ画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png) |
 | 新規アカウント登録機能を実装。 | マンダラシート形式でデータを表形式で表示する機能を実装（印刷可能）。 |
 
 | Mandalaチャート作成イントロ画面 |　Vision HUBページ |
 | ---- | ---- |
-| ![Mandalaチャート作成イントロ画面]("https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mandala-creation-intropage.png") | ![　PDF出力画面]("https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png") |
+| ![Mandalaチャート作成イントロ画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mandala-creation-intropage.png) | ![　PDF出力画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png) |
 | Mandalaチャートを作成する機能を実装。 |ユーザー同士で目標達成を応援し合う掲示板機能を実装。 |
 
 
