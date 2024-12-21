@@ -71,15 +71,22 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 ## 🛠️アプリケーション機能
 
-### コア機能
-- **Mandalaチャート作成**: 質問形式で目標・要素・タスクを設定。
-- **ログイン認証・新規登録**: データをクラウドで管理。
-- **目標達成シートの閲覧**: 作成したチャートをマイページで確認可能。
+### 現時点での実装機能
+| ページタイトル       | サンプル画像                                                                                               | 実装した機能                                                                                     |
+|----------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| ログイン画面         | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png"> <img alt="VisionGrid_loginpage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png" width="300"> </picture> | ユーザーネームとパスワードによる認証機能を実装                                                 |
+| ログイン成功画面     | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png"> <img alt="VisionGrid_loginsuccesspage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png" width="300"> </picture> | ログイン後にランダムでポジティブなメッセージを表示する機能を実装（現在10種類のメッセージを用意） |
+| 新規登録画面         | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registration-page.png"> <img alt="VisionGrid_registration-page" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registration-page.png" width="300"> </picture> | 新規アカウント登録機能を実装                                                                     |
+| MYページ             | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png"> <img alt="VisionGrid_mypage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png" width="300"> </picture> | マンダラシート形式でデータを表形式で表示する機能を実装（印刷可能）                               |
+| Mandalaチャート作成イントロページ | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mandala-creation-intropage.png"> <img alt="VisionGrid_mandala-creation-intropage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mandala-creation-intropage.png" width="300"> </picture> | Mandalaチャートを作成する機能を実装                                                           |
+| Vision HUBページ     | <picture> <source srcset="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png"> <img alt="VisionGrid_post-hubpage" src="https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png" width="300"> </picture> | ユーザー同士で目標達成を応援し合う掲示板機能を実装                                             |
 
 | サンプル動画                   | 説明                                |
 |--------------------------------|------------------------------------|
-| ![Sample](sample_videos/VisionGrid_sample_myPage.gif) | ログイン後のマイページ表示         |
-| ![Sample](sample_videos/VisionGrid_sample_MandalaCreation.gif) | 新規アカウントでのチャート作成     |
+| ![ログイン後のマイページ表示](sample_videos/VisionGrid_sample_myPage.gif) | ログイン後のマイページ表示         |
+| ![新規アカウントでのチャート作成](sample_videos/VisionGrid_sample_MandalaCreation.gif) | 新規アカウントでのチャート作成     |
+| ![ 新規アカウントでのチャート作成](sample_videos/VisionHUB_samplevideo.gif) | VISION HUB掲示板     |
+
 
 ### 今後の追加予定機能
 
