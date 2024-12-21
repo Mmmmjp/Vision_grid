@@ -71,7 +71,7 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 ## 🛠️アプリケーション機能
 
-## 機能一覧
+### ▶ 機能一覧
 | ログイン画面 |　ログイン成功画面 |
 | ---- | ---- |
 | ![ログイン画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png) | ![ログイン成功画面](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png) |
@@ -89,13 +89,13 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 ## 機能サンプル動画
 
-# VisionGrid サンプル動画
+### ▶ VisionGrid サンプル動画
 
 | サンプル動画                          | 説明                      |
 |---------------------------------------|---------------------------|
-| <img src="sample_videos/VisionGrid_sample_myPage.gif" width="300" alt="ログイン後のマイページ表示"> | ログイン後のマイページ表示 |
-| <img src="sample_videos/VisionGrid_sample_MandalaCreation.gif" width="300" alt="新規アカウントでのチャート作成"> | 新規アカウントでのチャート作成 |
-| <img src="sample_videos/VisionHUB_samplevideo.gif" width="300" alt="VISION HUB掲示板"> | VISION HUB掲示板           |
+| <img src="sample_videos/VisionGrid_sample_myPage.gif" width="450" alt="ログイン後のマイページ表示"> | ログイン後のマイページ表示 |
+| <img src="sample_videos/VisionGrid_sample_MandalaCreation.gif" width="450" alt="新規アカウントでのチャート作成"> | 新規アカウントでのチャート作成 |
+| <img src="sample_videos/VisionHUB_samplevideo.gif" width="450" alt="VISION HUB掲示板"> | VISION HUB掲示板           |
 
 
 
