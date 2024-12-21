@@ -60,7 +60,7 @@ This application was created to address the following challenges:
 
 ### 💡 Solutions via Web Application
 
-| 課題                           | 解決策                              　　　　　　　　　　　　|
+| Issues                           |　Solutions                            　　　　　　　　　　　　|
 |--------------------------------|----------------------------------------------------------|
 | **Flexible Information Management**         | 補Added functionality for supplementary information, overcoming paper limitations.-----|
 | **Efficient Review**           | Introduced diary and report features for easy review of past goals and progress.  |
@@ -70,15 +70,30 @@ This application was created to address the following challenges:
 
 ## 🛠️Features of the Application
 
-### Core Features
-- **Mandala Chart Creation**: Set goals, elements, and tasks through a guided questionnaire.
-- **Login and Registration**: Manage data in the cloud securely.
-- **Goal Achievement Sheet**: View created charts on your personal page.
+### ▶ Features Overview
+| Login Page |　Login Success Page |
+| ---- | ---- |
+| ![Login Page](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginpage.png) | ![Login Success Page](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/loginsuccess-page.png) |
+| Implements authentication using username and password. | Displays a random positive message upon login (currently includes 10 different messages). |
 
-| Sample Video                   | Description                                |
-|--------------------------------|------------------------------------|
-| ![Sample](https://github.com/Mmmmjp/Vision_grid/blob/main/sample_videos/VisionGrid_sample_myPage.gif) | Displays personal page after login.         |
-| ![Sample](https://github.com/Mmmmjp/Vision_grid/blob/main/sample_videos/VisionGrid_sample_MandalaCreation.gif) | Demonstrates creating a chart with a new account.     |
+| Registration Page |　MY Page |
+| ---- | ---- |
+| ![Registration Page](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/registeration-page.png) | ![MY Page](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/mypage.png) |
+| Implements new account registration functionality. | Displays data in a Mandala sheet format as a table (printable). |
+
+| Mandala Chart Creation Intro Page |　Vision HUB Page |
+| ---- | ---- |
+| ![ Mandala Chart Creation Intro Page](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/manadala-creation-intropage.png) | ![Vision HUB Page](https://raw.githubusercontent.com/Mmmmjp/Vision_grid/main/images/post-hubpage.png) |
+| Implements functionality to create Mandala charts. |Provides a bulletin board feature where users can support each other in achieving goals. |
+
+## ▶ Features sample videos
+
+| Sample Video                          | Description                     |
+|---------------------------------------|---------------------------|
+| <img src="sample_videos/VisionGrid_sample_myPage.gif" width="400" alt="Displays personal page after login."> | Displays personal page after login.   |
+| <img src="sample_videos/VisionGrid_sample_MandalaCreation.gif" width="400" alt="Demonstrates creating a chart"> | Demonstrates creating a chart with a new account. |
+| <img src="sample_videos/VisionHUB_samplevideo.gif" width="400" alt="VISION HUB"> | VISION HUB          |
+
 
 ### Planned Features
 
