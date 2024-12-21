@@ -93,9 +93,9 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 | サンプル動画                          | 説明                      |
 |---------------------------------------|---------------------------|
-| <img src="sample_videos/VisionGrid_sample_myPage.gif" width="450" alt="ログイン後のマイページ表示"> | ログイン後のマイページ表示 |
-| <img src="sample_videos/VisionGrid_sample_MandalaCreation.gif" width="450" alt="新規アカウントでのチャート作成"> | 新規アカウントでのチャート作成 |
-| <img src="sample_videos/VisionHUB_samplevideo.gif" width="450" alt="VISION HUB掲示板"> | VISION HUB掲示板           |
+| <img src="sample_videos/VisionGrid_sample_myPage.gif" width="400" alt="ログイン後のマイページ表示"> | ログイン後のマイページ表示 |
+| <img src="sample_videos/VisionGrid_sample_MandalaCreation.gif" width="400" alt="新規アカウントでのチャート作成"> | 新規アカウントでのチャート作成 |
+| <img src="sample_videos/VisionHUB_samplevideo.gif" width="400" alt="VISION HUB掲示板"> | VISION HUB掲示板           |
 
 
 
