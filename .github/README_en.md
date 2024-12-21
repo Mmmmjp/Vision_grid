@@ -90,9 +90,9 @@ This application was created to address the following challenges:
 
 | Sample Video                          | Description                     |
 |---------------------------------------|---------------------------|
-| <img src="sample_videos/VisionGrid_sample_myPage.gif" width="400" alt="Displays personal page after login."> | Displays personal page after login.   |
-| <img src="sample_videos/VisionGrid_sample_MandalaCreation.gif" width="400" alt="Demonstrates creating a chart"> | Demonstrates creating a chart with a new account. |
-| <img src="sample_videos/VisionHUB_samplevideo.gif" width="400" alt="VISION HUB"> | VISION HUB          |
+| <img src="https://github.com/Mmmmjp/Vision_grid/blob/main/sample_videos/VisionGrid_sample_myPage.gif" width="400" alt="Displays personal page after login."> | Displays personal page after login.   |
+| <img src="https://github.com/Mmmmjp/Vision_grid/blob/main/sample_videos/VisionGrid_sample_MandalaCreation.gif" width="400" alt="Demonstrates creating a chart"> | Demonstrates creating a chart with a new account. |
+| <img src="https://github.com/Mmmmjp/Vision_grid/blob/main/sample_videos/VisionHUB_samplevideo.gif" width="400" alt="VISION HUB"> | VISION HUB          |
 
 
 ### Planned Features
