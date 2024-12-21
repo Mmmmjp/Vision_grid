@@ -89,11 +89,14 @@ Mandalaチャートを採用し、ユーザーが大きな目標を具体的な�
 
 ## 機能サンプル動画
 
-| サンプル動画                   | 説明                                |
-|--------------------------------|------------------------------------|
-| ![ログイン後のマイページ表示](sample_videos/VisionGrid_sample_myPage.gif) | ログイン後のマイページ表示         |
-| ![新規アカウントでのチャート作成](sample_videos/VisionGrid_sample_MandalaCreation.gif) | 新規アカウントでのチャート作成     |
-| ![ 新規アカウントでのチャート作成](sample_videos/VisionHUB_samplevideo.gif) | VISION HUB掲示板     |
+# VisionGrid サンプル動画
+
+| サンプル動画                          | 説明                      |
+|---------------------------------------|---------------------------|
+| <img src="sample_videos/VisionGrid_sample_myPage.gif" width="300" alt="ログイン後のマイページ表示"> | ログイン後のマイページ表示 |
+| <img src="sample_videos/VisionGrid_sample_MandalaCreation.gif" width="300" alt="新規アカウントでのチャート作成"> | 新規アカウントでのチャート作成 |
+| <img src="sample_videos/VisionHUB_samplevideo.gif" width="300" alt="VISION HUB掲示板"> | VISION HUB掲示板           |
+
 
 
 ### 今後の追加予定機能
