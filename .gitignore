@@ -24,10 +24,7 @@
 hs_err_pid*
 replay_pid*
 
-# Maven build directory
-/target/
-
-# Gradle build directory
+# Gradle build directory (if Gradle is used)
 /build/
 /.gradle/
 
@@ -56,3 +53,4 @@ replay_pid*
 *.swp
 *.DS_Store
 Thumbs.db
+
