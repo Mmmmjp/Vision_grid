@@ -112,6 +112,10 @@ Through VisionGrid’s development, the following skills were enhanced:
 | MVC Model                      | Application architecture and data management.   |
 | GitHub Version Control      | Efficient version control and collaboration. |
 
+### ▶ Future Learning Goals  
+**Development Utilizing Design Patterns**  
+Aim to learn and practice development procedures using Maven and Spring Boot, with the goal of creating projects through hands-on experience.
+
 ---
 
 ## 💻Technologies Used
