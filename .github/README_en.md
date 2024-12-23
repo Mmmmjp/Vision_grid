@@ -29,21 +29,21 @@
 - [🗂️ Directory Structure](https://github.com/Mmmmjp/Vision_grid#directory-tree)
   
 --- 
-## 🌐About the Application
-**VisionGrid**is a web application designed to support goal setting and achievement. It incorporates the Mandala Chart methodology, enabling users to break down large goals into specific elements and tasks, manage them, and review their progress toward achievement.
+## 🌐 About the Application
+**VisionGrid** is a web application designed to support goal setting and achievement. It incorporates the Mandala Chart methodology, enabling users to break down large goals into specific elements and tasks, manage them, and review their progress toward achievement.
 
 ▶【Sample Mandala Chart Image】
 ![Sample image of Manadala sheet](https://github.com/Mmmmjp/Vision_grid/blob/main/images/grid-sheet-sample.png)
 
 
 ---
-## 🎯Target Users
+## 🎯 Target Users
 - Individuals striving to achieve their goals or learning something new.
 - Those facing career transitions or job hunting and need to reflect on their goals and direction.
 
 ---
 
-## 💡Motivation for Creating the Application
+## 💡 Motivation for Creating the Application
 
 ### 💬 Issues to Solve
 
@@ -62,13 +62,13 @@ This application was created to address the following challenges:
 
 | Issues                           |　Solutions                            　　　　　　　　　　　　|
 |--------------------------------|----------------------------------------------------------|
-| **Flexible Information Management**         | 補Added functionality for supplementary information, overcoming paper limitations.-----|
+| **Flexible Information Management**         | Added functionality for supplementary information, overcoming paper limitations.|
 | **Efficient Review**           | Introduced diary and report features for easy review of past goals and progress.  |
 | **Ease of Progress Management**           | Implemented editable Mandala Charts for smooth updates.    |
 | **Data Sharing and Security**       | Added login functionality to securely manage and share data in the cloud.     |
 ---
 
-## 🛠️Features of the Application
+## 🛠️ Features of the Application
 
 ### ▶ Features Overview
 | Login Page |　Login Success Page |
@@ -103,7 +103,7 @@ This application was created to address the following challenges:
 
 ---
 
-## 🌱Learning Objectives Through Application Development
+## 🌱 Learning Objectives Through Application Development
 
 Through VisionGrid’s development, the following skills were enhanced:
 | Skills                         | Learning Objectives                           |
@@ -120,19 +120,19 @@ Through VisionGrid’s development, the following skills were enhanced:
 | Frontend | HTML, CSS, JavaScript        |
 | Backend   | Java                         |
 | Database   | H2 Database                  |
-| Development      | Eclipse, Visual Studio Code |
+| Development      | Eclipse 2023 Apache Tomcat, Visual Studio Code |
 
 
 ---
 
-## 📂Repository Clone Instructions
+## 📂 Repository Clone Instructions
    ```bash
    git clone https://github.com/your-username/VisionGrid.git
    ```
 
 ---
 
-## 🗄️Database Details
+## 🗄️ Database Details
 
 Database files should be saved in the following directory:
 ```
@@ -143,7 +143,7 @@ Database files should be saved in the following directory:
 > **Password** : 
 ---
 
-## 🗂️Directory Structure
+## 🗂️ Directory Structure
 
 ### Directory Structure for Login and Registration Features Implementation
 ```
